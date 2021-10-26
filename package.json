@@ -1,0 +1,18 @@
+{
+  "name": "chat-guard",
+  "author": "Heimdall",
+  "version": "2.0.0",
+  "description": "Discord sunucuları için chat koruma botu",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "mongoose": "^5.12.6"
+  }
+}
