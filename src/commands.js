@@ -24,7 +24,7 @@ client.on('message', async message => {
             .setTimestamp()
             .setDescription(`
         \`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
-        \`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/2MnbKvGVZr)
+        \`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/d44zqCemN3)
         \`•\` [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
 `))
     } 
@@ -37,7 +37,7 @@ client.on('message', async message => {
             .setTimestamp()
             .setDescription(`
             \`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
-            \`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/2MnbKvGVZr)
+            \`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/d44zqCemN3)
             \`•\` [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
         `))
     } 
@@ -50,7 +50,7 @@ client.on('message', async message => {
             .setTimestamp()
             .setDescription(`
             \`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
-            \`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/2MnbKvGVZr)
+            \`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/d44zqCemN3)
             \`•\` [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
             `))
     } 
