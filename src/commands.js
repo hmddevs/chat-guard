@@ -3,7 +3,9 @@ const db = require('./db');
 const config = require('./config');
 const { MessageEmbed } = require('discord.js');
 const { RandomColor } = require('./functionz');
-
+const moment = require("moment")
+require("moment-duration-format")
+moment.locale("tr")
 
 client.on('message', async message => {
     if(!message.guild || message.author.bot) return;
@@ -18,30 +20,38 @@ client.on('message', async message => {
         message.channel.send(new MessageEmbed()
             .setColor("#5865F2")
             .setAuthor(message.author.tag, message.author.avatarURL({ dynamic: true }))
-            .setThumbnail(message.guild.iconURL())
+            .setThumbnail(client.user.avatarURL())
             .setTimestamp()
             .setDescription(`
-        \`•\` Bu komut en kısa sürede aktif olacaktır. İşleri henüz tam olarak yoluna koymadım.`))
+        \`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
+        \`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/2MnbKvGVZr)
+        \`•\` [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
+`))
     } 
 
     if(command.toLowerCase() === 'destek') {
         message.channel.send(new MessageEmbed()
             .setColor("#5865F2")
             .setAuthor(message.author.tag, message.author.avatarURL({ dynamic: true }))
-            .setThumbnail(message.guild.iconURL())
+            .setThumbnail(client.user.avatarURL())
             .setTimestamp()
             .setDescription(`
-        \`•\` Bu komut en kısa sürede aktif olacaktır. İşleri henüz tam olarak yoluna koymadım.`))
+            \`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
+            \`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/2MnbKvGVZr)
+            \`•\` [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote
+        `))
     } 
 
     if(command.toLowerCase() === 'oy') {
         message.channel.send(new MessageEmbed()
             .setColor("#5865F2")
             .setAuthor(message.author.tag, message.author.avatarURL({ dynamic: true }))
-            .setThumbnail(message.guild.iconURL())
+            .setThumbnail(client.user.avatarURL())
             .setTimestamp()
             .setDescription(`
-        \`•\` Bu komut en kısa sürede aktif olacaktır. İşleri henüz tam olarak yoluna koymadım.`))
+            \`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
+            \`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/2MnbKvGVZr)
+            \`•\` [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote        `))
     } 
 
     if(command.toLowerCase() === 'info') {
@@ -49,10 +59,14 @@ client.on('message', async message => {
         message.channel.send(new MessageEmbed()
             .setColor("#5865F2")
             .setAuthor(message.author.tag, message.author.avatarURL({ dynamic: true }))
-            .setThumbnail(message.guild.iconURL())
+            .setThumbnail(client.user.avatarURL())
             .setTimestamp()
             .setDescription(`
-        \`•\` Bu komut en kısa sürede aktif olacaktır. İşleri henüz tam olarak yoluna koymadım.`))
+        \`•\` **${client.guilds.cache.size.toLocaleString()}** sunucuya hizmet veriyorum.
+        \`•\` **${client.guilds.cache.reduce((acc, currentValue) => acc + currentValue.memberCount, 0)}** kullanıcıya hizmet veriyorum.
+        \`•\` Pingim: **${client.ws.ping}**
+        \`•\` **${moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]")}** dir aktifim.
+        `))
     } 
 
 
@@ -65,7 +79,7 @@ client.on('message', async message => {
             message.channel.send(new MessageEmbed()
                 .setColor("#5865F2")
                 .setAuthor(message.author.tag, message.author.avatarURL({ dynamic: true }))
-                .setThumbnail(message.guild.iconURL())
+                .setThumbnail(client.user.avatarURL())
                 .setTimestamp()
                 .setDescription(`
         __**Sistemler:**__
@@ -97,7 +111,7 @@ client.on('message', async message => {
             message.channel.send(new MessageEmbed()
                 .setColor("#5865F2")
                 .setAuthor(message.author.tag, message.author.avatarURL({ dynamic: true }))
-                .setThumbnail(message.guild.iconURL())
+                .setThumbnail(client.user.avatarURL())
                 .setTimestamp()
                 .setDescription(`
     __**SİSTEMLER**__
