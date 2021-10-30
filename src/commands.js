@@ -36,8 +36,8 @@ client.on('message', async message => {
             .setThumbnail(client.user.avatarURL())
             .setTimestamp()
             .setDescription(`
-            \`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
-            \`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/d44zqCemN3)
+            \`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands) /n
+            \`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/d44zqCemN3) /n
             \`•\` [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
         `))
     } 
