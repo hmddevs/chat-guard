@@ -23,10 +23,10 @@ client.on('message', async message => {
             .setThumbnail(client.user.avatarURL())
             .setTimestamp()
             .setDescription(`
-        \`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
-        \`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/d44zqCemN3)
-        \`•\` [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
-`))
+\`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
+\`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/d44zqCemN3)
+\`•\` [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
+        `))
     } 
 
     if(command.toLowerCase() === 'destek') {
@@ -36,7 +36,7 @@ client.on('message', async message => {
             .setThumbnail(client.user.avatarURL())
             .setTimestamp()
             .setDescription(`
-\`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.
+\`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
 \`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/d44zqCemN3)
 \`•\` [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
         `))
@@ -49,10 +49,10 @@ client.on('message', async message => {
             .setThumbnail(client.user.avatarURL())
             .setTimestamp()
             .setDescription(`
-            \`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
-            \`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/d44zqCemN3)
-            \`•\` [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
-            `))
+\`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
+\`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/d44zqCemN3)
+\`•\` [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
+        `))
     } 
 
     if(command.toLowerCase() === 'info') {
@@ -63,10 +63,10 @@ client.on('message', async message => {
             .setThumbnail(client.user.avatarURL())
             .setTimestamp()
             .setDescription(`
-        \`•\` **${client.guilds.cache.size.toLocaleString()}** sunucuya hizmet veriyorum.
-        \`•\` **${client.guilds.cache.reduce((acc, currentValue) => acc + currentValue.memberCount, 0)}** kullanıcıya hizmet veriyorum.
-        \`•\` Pingim: **${client.ws.ping}**
-        \`•\` **${moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]")}** dir aktifim.
+\`•\` **${client.guilds.cache.size.toLocaleString()}** sunucuya hizmet veriyorum.
+\`•\` **${client.guilds.cache.reduce((acc, currentValue) => acc + currentValue.memberCount, 0)}** kullanıcıya hizmet veriyorum.
+\`•\` Pingim: **${client.ws.ping}**
+\`•\` **${moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]")}** dir aktifim.
         `))
     } 
 
