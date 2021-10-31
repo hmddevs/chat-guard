@@ -97,10 +97,10 @@ __**Whitelist:**__
 \`>\` Whitelist'te ki kanallar: ${Database.WhiteListChannels ? Database.WhiteListChannels.map(id => `<#${id}>`).join('\n') : 'Whitlist\'te hiç kanal yok.'}
  
 __**Diğer Sistemler:**__
-<a:holo:812402157278068746>**Filtreli Kelimeler**: ${Database.FiltredWords ? Database.FiltredWords.join() : 'Filtre\'de hiç kelime yok.'}
-<a:holo:812402157278068746>**Mute Rolü**: ${Database.MutedRoleID ? "<@&"+Database.MutedRoleID+">" : 'Mute Rolü ayarlanmamış.'}
-<a:holo:812402157278068746>**Mute Süresi**: ${Database.MuteDurationMinute ?""+Database.MuteDurationMinute+" Dakika." : '60'}
-<a:holo:812402157278068746>**Log Kanalı**: ${Database.PunishLogChannelID ? "<#"+Database.PunishLogChannelID+">" : 'Log kanalı ayarlanmamış.'}
+<a:holo:812402157278068746> **Filtreli Kelimeler**: ${Database.FiltredWords ? Database.FiltredWords.join() : 'Filtre\'de hiç kelime yok.'}
+<a:holo:812402157278068746> **Mute Rolü**: ${Database.MutedRoleID ? "<@&"+Database.MutedRoleID+">" : 'Mute Rolü ayarlanmamış.'}
+<a:holo:812402157278068746> **Mute Süresi**: ${Database.MuteDurationMinute ?""+Database.MuteDurationMinute+" Dakika." : '60'}
+<a:holo:812402157278068746> **Log Kanalı**: ${Database.PunishLogChannelID ? "<#"+Database.PunishLogChannelID+">" : 'Log kanalı ayarlanmamış.'}
 
 <a:holo:812402157278068746>Komutları ve kullanımlarını görmek için \`${config.Prefix}komutlar\` yazabilirsin.
 <a:holo:812402157278068746>Botu sunucuna eklemek/davet etmek için \`${config.Prefix}davet\` yazabilirsin.
@@ -128,10 +128,10 @@ __**WHİTELİST**__
 \`>\` Whitelist'te ki roller: **Whitlist'te hiç rol yok.**
 \`>\` Whitelist'te ki kanallar: **Whitlist'te hiç kanal yok.**
 
-<a:holo:812402157278068746>Komutları ve kullanımlarını görmek için ${config.Prefix}komutlar yazabilirsin.
-<a:holo:812402157278068746>Botu sunucuna eklemek/davet etmek için ${config.Prefix}davet yazabilirsin.
-<a:holo:812402157278068746>Destek almak/destek sunucusuna katılmak için ${config.Prefix}destek yazabilirsin.
-<a:holo:812402157278068746>Bot top.gg üzerinden oy verip destek olmak için ${config.Prefix}oy yazabilirsin.
+<a:holo:812402157278068746> Komutları ve kullanımlarını görmek için ${config.Prefix}komutlar yazabilirsin.
+<a:holo:812402157278068746> Botu sunucuna eklemek/davet etmek için ${config.Prefix}davet yazabilirsin.
+<a:holo:812402157278068746> Destek almak/destek sunucusuna katılmak için ${config.Prefix}destek yazabilirsin.
+<a:holo:812402157278068746> Bot top.gg üzerinden oy verip destek olmak için ${config.Prefix}oy yazabilirsin.
 `)).catch(() => {}); }
 
     }
