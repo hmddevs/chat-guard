@@ -23,9 +23,9 @@ client.on('message', async message => {
             .setThumbnail(client.user.avatarURL())
             .setTimestamp()
             .setDescription(`
-\`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
-\`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/d44zqCemN3)
-\`•\` [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
+<a:holo:812402157278068746> [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
+<a:holo:812402157278068746> [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/d44zqCemN3)
+<a:holo:812402157278068746> [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
         `))
     } 
 
@@ -36,9 +36,9 @@ client.on('message', async message => {
             .setThumbnail(client.user.avatarURL())
             .setTimestamp()
             .setDescription(`
-\`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
-\`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/d44zqCemN3)
-\`•\` [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
+<a:holo:812402157278068746> [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
+<a:holo:812402157278068746> [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/d44zqCemN3)
+<a:holo:812402157278068746> [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
         `))
     } 
 
@@ -49,9 +49,9 @@ client.on('message', async message => {
             .setThumbnail(client.user.avatarURL())
             .setTimestamp()
             .setDescription(`
-\`•\` [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
-\`•\` [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/d44zqCemN3)
-\`•\` [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
+<a:holo:812402157278068746> [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
+<a:holo:812402157278068746> [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/d44zqCemN3)
+<a:holo:812402157278068746> [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
         `))
     } 
 
@@ -63,10 +63,10 @@ client.on('message', async message => {
             .setThumbnail(client.user.avatarURL())
             .setTimestamp()
             .setDescription(`
-\`•\` **${client.guilds.cache.size.toLocaleString()}** sunucuya hizmet veriyorum.
-\`•\` **${client.guilds.cache.reduce((acc, currentValue) => acc + currentValue.memberCount, 0)}** kullanıcıya hizmet veriyorum.
-\`•\` Pingim: **${client.ws.ping}**
-\`•\` **${moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]")}** dir aktifim.
+<a:holo:812402157278068746> **${client.guilds.cache.size.toLocaleString()}** sunucuya hizmet veriyorum.
+<a:holo:812402157278068746> **${client.guilds.cache.reduce((acc, currentValue) => acc + currentValue.memberCount, 0)}** kullanıcıya hizmet veriyorum.
+<a:holo:812402157278068746> Pingim: **${client.ws.ping}**
+<a:holo:812402157278068746> **${moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]")}** dir aktifim.
         `))
     } 
 
@@ -84,12 +84,12 @@ client.on('message', async message => {
                 .setTimestamp()
                 .setDescription(`
 __**Sistemler:**__
-\`•\` **Character Limit:** ${Database.CharacterLimit ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
-\`•\` **Invite Guard:** ${Database.InviteGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
-\`•\` **Link Guard:** ${Database.LinkGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
-\`•\` **MassPing Guard:** ${Database.MassPingGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
-\`•\` **BadWord Guard:** ${Database.BadWordGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
-\`•\` **Spam Guard:** ${Database.SpamGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
+<a:holo:812402157278068746> **Character Limit:** ${Database.CharacterLimit ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
+<a:holo:812402157278068746> **Invite Guard:** ${Database.InviteGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
+<a:holo:812402157278068746> **Link Guard:** ${Database.LinkGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
+<a:holo:812402157278068746> **MassPing Guard:** ${Database.MassPingGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
+<a:holo:812402157278068746> **BadWord Guard:** ${Database.BadWordGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
+<a:holo:812402157278068746> **Spam Guard:** ${Database.SpamGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
      
 __**Whitelist:**__
 \`>\` Whitelist'te ki üyeler: ${Database.WhiteListMembers ? Database.WhiteListMembers.map(id => `<@${id}>`).join('\n') : 'Whitlist\'te hiç üye yok.'}
@@ -97,15 +97,15 @@ __**Whitelist:**__
 \`>\` Whitelist'te ki kanallar: ${Database.WhiteListChannels ? Database.WhiteListChannels.map(id => `<#${id}>`).join('\n') : 'Whitlist\'te hiç kanal yok.'}
  
 __**Diğer Sistemler:**__
-\`•\`**Filtreli Kelimeler**: ${Database.FiltredWords ? Database.FiltredWords.join() : 'Filtre\'de hiç kelime yok.'}
-\`•\`**Mute Rolü**: ${Database.MutedRoleID ? "<@&"+Database.MutedRoleID+">" : 'Mute Rolü ayarlanmamış.'}
-\`•\`**Mute Süresi**: ${Database.MuteDurationMinute ?""+Database.MuteDurationMinute+" Dakika." : '60'}
-\`•\`**Log Kanalı**: ${Database.PunishLogChannelID ? "<#"+Database.PunishLogChannelID+">" : 'Log kanalı ayarlanmamış.'}
+<a:holo:812402157278068746>**Filtreli Kelimeler**: ${Database.FiltredWords ? Database.FiltredWords.join() : 'Filtre\'de hiç kelime yok.'}
+<a:holo:812402157278068746>**Mute Rolü**: ${Database.MutedRoleID ? "<@&"+Database.MutedRoleID+">" : 'Mute Rolü ayarlanmamış.'}
+<a:holo:812402157278068746>**Mute Süresi**: ${Database.MuteDurationMinute ?""+Database.MuteDurationMinute+" Dakika." : '60'}
+<a:holo:812402157278068746>**Log Kanalı**: ${Database.PunishLogChannelID ? "<#"+Database.PunishLogChannelID+">" : 'Log kanalı ayarlanmamış.'}
 
-\`•\`Komutları ve kullanımlarını görmek için \`${config.Prefix}komutlar\` yazabilirsin.
-\`•\`Botu sunucuna eklemek/davet etmek için \`${config.Prefix}davet\` yazabilirsin.
-\`•\`Destek almak/destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
-\`•\`Bot top.gg üzerinden oy verip destek olmak için \`${config.Prefix}oy\` yazabilirsin.
+<a:holo:812402157278068746>Komutları ve kullanımlarını görmek için \`${config.Prefix}komutlar\` yazabilirsin.
+<a:holo:812402157278068746>Botu sunucuna eklemek/davet etmek için \`${config.Prefix}davet\` yazabilirsin.
+<a:holo:812402157278068746>Destek almak/destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
+<a:holo:812402157278068746>Bot top.gg üzerinden oy verip destek olmak için \`${config.Prefix}oy\` yazabilirsin.
   `)).catch(() => {}); }
 
         if(!Database) {
@@ -116,22 +116,22 @@ __**Diğer Sistemler:**__
                 .setTimestamp()
                 .setDescription(`
 __**SİSTEMLER**__
-\`•\` **Character Limit:**<:off:804779269577244693>
-\`•\` **Invite Guard:**<:off:804779269577244693>
-\`•\` **Link Guard:**<:off:804779269577244693>
-\`•\` **MassPing Guard:**<:off:804779269577244693>
-\`•\` **BadWord Guard:**<:off:804779269577244693>
-\`•\` **Spam Guard:**<:off:804779269577244693>
+<a:holo:812402157278068746> **Character Limit:**<:off:804779269577244693>
+<a:holo:812402157278068746> **Invite Guard:**<:off:804779269577244693>
+<a:holo:812402157278068746> **Link Guard:**<:off:804779269577244693>
+<a:holo:812402157278068746> **MassPing Guard:**<:off:804779269577244693>
+<a:holo:812402157278068746> **BadWord Guard:**<:off:804779269577244693>
+<a:holo:812402157278068746> **Spam Guard:**<:off:804779269577244693>
 
 __**WHİTELİST**__
 \`>\` Whitelist'te ki üyeler: **Whitlist'te hiç üye yok.**
 \`>\` Whitelist'te ki roller: **Whitlist'te hiç rol yok.**
 \`>\` Whitelist'te ki kanallar: **Whitlist'te hiç kanal yok.**
 
-\`•\`Komutları ve kullanımlarını görmek için ${config.Prefix}komutlar yazabilirsin.
-\`•\`Botu sunucuna eklemek/davet etmek için ${config.Prefix}davet yazabilirsin.
-\`•\`Destek almak/destek sunucusuna katılmak için ${config.Prefix}destek yazabilirsin.
-\`•\`Bot top.gg üzerinden oy verip destek olmak için ${config.Prefix}oy yazabilirsin.
+<a:holo:812402157278068746>Komutları ve kullanımlarını görmek için ${config.Prefix}komutlar yazabilirsin.
+<a:holo:812402157278068746>Botu sunucuna eklemek/davet etmek için ${config.Prefix}davet yazabilirsin.
+<a:holo:812402157278068746>Destek almak/destek sunucusuna katılmak için ${config.Prefix}destek yazabilirsin.
+<a:holo:812402157278068746>Bot top.gg üzerinden oy verip destek olmak için ${config.Prefix}oy yazabilirsin.
 `)).catch(() => {}); }
 
     }
@@ -147,37 +147,37 @@ __**WHİTELİST**__
 
 <:yann:804778651837005894> Yardım için \`${config.Prefix}yardım\` yazabilirsin.
 
-\`•\` Sunucunun durumunu görmek için: \`${config.Prefix}serverstatus\`
+<a:holo:812402157278068746> Sunucunun durumunu görmek için: \`${config.Prefix}serverstatus\`
 
-\`•\` Üyeleri bir rolü veya kanalı whitelist'e almak için: \`${config.Prefix}whitelist [ekle veya kaldır] [Rol veya kanal veya üye](etiket veya id)\`
+<a:holo:812402157278068746> Üyeleri bir rolü veya kanalı whitelist'e almak için: \`${config.Prefix}whitelist [ekle veya kaldır] [Rol veya kanal veya üye](etiket veya id)\`
     
-\`•\` Sunucuda Herhangi bir kelimenin  kullanılmaması yani filtreye eklemek için: \`${config.Prefix}filtre [ekle veya kaldır] [kelime]\`
+<a:holo:812402157278068746> Sunucuda Herhangi bir kelimenin  kullanılmaması yani filtreye eklemek için: \`${config.Prefix}filtre [ekle veya kaldır] [kelime]\`
 
-\`•\` Mute rolünü ayarlamak için: \`${config.Prefix}muterole @role [etiket veya id] \`
+<a:holo:812402157278068746> Mute rolünü ayarlamak için: \`${config.Prefix}muterole @role [etiket veya id] \`
 
-\`•\` Mute süresini ayarlamak için: \`${config.Prefix}mutesüre 10 [Süreyi dakika cinsinden girin] \`
+<a:holo:812402157278068746> Mute süresini ayarlamak için: \`${config.Prefix}mutesüre 10 [Süreyi dakika cinsinden girin] \`
 
-\`•\` Log kanalını ayarlamak için: \`${config.Prefix}logchannel @channel [etiket veya id\`
+<a:holo:812402157278068746> Log kanalını ayarlamak için: \`${config.Prefix}logchannel @channel [etiket veya id\`
 
-\`•\` Sunucuda ceza yemiş belirli bir kullanıcının cezasını kaldırmak için: \`${config.Prefix}cezakaldır @user [etiket veya id] \`
+<a:holo:812402157278068746> Sunucuda ceza yemiş belirli bir kullanıcının cezasını kaldırmak için: \`${config.Prefix}cezakaldır @user [etiket veya id] \`
     
-\`•\` Sunucuda Çok uzun yazılıp sohbeti dolduran mesajların silinmesi için: \`${config.Prefix}characterlimit [aç veya kapat] \`
+<a:holo:812402157278068746> Sunucuda Çok uzun yazılıp sohbeti dolduran mesajların silinmesi için: \`${config.Prefix}characterlimit [aç veya kapat] \`
     
-\`•\` Sunucuda Başka sunucuların davet linklerinin  paylaşılmaması için: \`${config.Prefix}inviteguard [aç veya kapat] \`
+<a:holo:812402157278068746> Sunucuda Başka sunucuların davet linklerinin  paylaşılmaması için: \`${config.Prefix}inviteguard [aç veya kapat] \`
     
-\`•\` Sunucuda herhangi bir link paylaşılmaması için için: \`${config.Prefix}linkguard [aç veya kapat] \`
+<a:holo:812402157278068746> Sunucuda herhangi bir link paylaşılmaması için için: \`${config.Prefix}linkguard [aç veya kapat] \`
     
-\`•\` Sunucuda Mesajında bir sürü kişinin etiketlenememesi için: \`${config.Prefix}masspingguard [aç veya kapat] \`
+<a:holo:812402157278068746> Sunucuda Mesajında bir sürü kişinin etiketlenememesi için: \`${config.Prefix}masspingguard [aç veya kapat] \`
 
-\`•\` Sunucuda Küfür içerikli mesajlar atılmaması için: \`${config.Prefix}badwordguard [aç veya kapat] \`
+<a:holo:812402157278068746> Sunucuda Küfür içerikli mesajlar atılmaması için: \`${config.Prefix}badwordguard [aç veya kapat] \`
 
-\`•\` Sunucuda spam yapılmaması için: \`${config.Prefix}spamguard [aç veya kapat] \`
+<a:holo:812402157278068746> Sunucuda spam yapılmaması için: \`${config.Prefix}spamguard [aç veya kapat] \`
 
-\`•\` Botu sunucuna eklemek/davet etmek için \`${config.Prefix}davet\` yazabilirsin.
+<a:holo:812402157278068746> Botu sunucuna eklemek/davet etmek için \`${config.Prefix}davet\` yazabilirsin.
 
-\`•\` Destek almak/destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
+<a:holo:812402157278068746> Destek almak/destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
 
-\`•\` Bot top.gg üzerinden oy verip destek olmak için \`${config.Prefix}oy\` yazabilirsin.
+<a:holo:812402157278068746> Bot top.gg üzerinden oy verip destek olmak için \`${config.Prefix}oy\` yazabilirsin.
     
       `)).catch(() => {});
     }
@@ -193,37 +193,37 @@ __**WHİTELİST**__
 
 :star: Yardım için \`${config.Prefix}yardım\` yazabilirsin.
 
-\`•\` Sunucunun durumunu görmek için: \`${config.Prefix}serverstatus\`
+<a:holo:812402157278068746> Sunucunun durumunu görmek için: \`${config.Prefix}serverstatus\`
 
-\`•\` Üyeleri bir rolü veya kanalı whitelist'e almak için: \`${config.Prefix}whitelist [ekle veya kaldır] [Rol veya kanal veya üye](etiket veya id)\`
+<a:holo:812402157278068746> Üyeleri bir rolü veya kanalı whitelist'e almak için: \`${config.Prefix}whitelist [ekle veya kaldır] [Rol veya kanal veya üye](etiket veya id)\`
     
-\`•\` Sunucuda Herhangi bir kelimenin  kullanılmaması yani filtreye eklemek için: \`${config.Prefix}filtre [ekle veya kaldır] [kelime]\`
+<a:holo:812402157278068746> Sunucuda Herhangi bir kelimenin  kullanılmaması yani filtreye eklemek için: \`${config.Prefix}filtre [ekle veya kaldır] [kelime]\`
 
-\`•\` Mute rolünü ayarlamak için: \`${config.Prefix}muterole @role [etiket veya id] \`
+<a:holo:812402157278068746> Mute rolünü ayarlamak için: \`${config.Prefix}muterole @role [etiket veya id] \`
 
-\`•\` Mute süresini ayarlamak için: \`${config.Prefix}mutesüre 10 [Süreyi dakika cinsinden girin] \`
+<a:holo:812402157278068746> Mute süresini ayarlamak için: \`${config.Prefix}mutesüre 10 [Süreyi dakika cinsinden girin] \`
 
-\`•\` Log kanalını ayarlamak için: \`${config.Prefix}logchannel @channel [etiket veya id\`
+<a:holo:812402157278068746> Log kanalını ayarlamak için: \`${config.Prefix}logchannel @channel [etiket veya id\`
 
-\`•\` Sunucuda ceza yemiş belirli bir kullanıcının cezasını kaldırmak için: \`${config.Prefix}cezakaldır @user [etiket veya id] \`
+<a:holo:812402157278068746> Sunucuda ceza yemiş belirli bir kullanıcının cezasını kaldırmak için: \`${config.Prefix}cezakaldır @user [etiket veya id] \`
     
-\`•\` Sunucuda Çok uzun yazılıp sohbeti dolduran mesajların silinmesi için: \`${config.Prefix}characterlimit [aç veya kapat] \`
+<a:holo:812402157278068746> Sunucuda Çok uzun yazılıp sohbeti dolduran mesajların silinmesi için: \`${config.Prefix}characterlimit [aç veya kapat] \`
     
-\`•\` Sunucuda Başka sunucuların davet linklerinin  paylaşılmaması için: \`${config.Prefix}inviteguard [aç veya kapat] \`
+<a:holo:812402157278068746> Sunucuda Başka sunucuların davet linklerinin  paylaşılmaması için: \`${config.Prefix}inviteguard [aç veya kapat] \`
     
-\`•\` Sunucuda herhangi bir link paylaşılmaması için için: \`${config.Prefix}linkguard [aç veya kapat] \`
+<a:holo:812402157278068746> Sunucuda herhangi bir link paylaşılmaması için için: \`${config.Prefix}linkguard [aç veya kapat] \`
     
-\`•\` Sunucuda Mesajında bir sürü kişinin etiketlenememesi için: \`${config.Prefix}masspingguard [aç veya kapat] \`
+<a:holo:812402157278068746> Sunucuda Mesajında bir sürü kişinin etiketlenememesi için: \`${config.Prefix}masspingguard [aç veya kapat] \`
 
-\`•\` Sunucuda Küfür içerikli mesajlar atılmaması için: \`${config.Prefix}badwordguard [aç veya kapat] \`
+<a:holo:812402157278068746> Sunucuda Küfür içerikli mesajlar atılmaması için: \`${config.Prefix}badwordguard [aç veya kapat] \`
 
-\`•\` Sunucuda spam yapılmaması için: \`${config.Prefix}spamguard [aç veya kapat] \`
+<a:holo:812402157278068746> Sunucuda spam yapılmaması için: \`${config.Prefix}spamguard [aç veya kapat] \`
 
-\`•\` Botu sunucuna eklemek/davet etmek için \`${config.Prefix}davet\` yazabilirsin.
+<a:holo:812402157278068746> Botu sunucuna eklemek/davet etmek için \`${config.Prefix}davet\` yazabilirsin.
 
-\`•\` Destek almak/destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
+<a:holo:812402157278068746> Destek almak/destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
 
-\`•\` Bot top.gg üzerinden oy verip destek olmak için \`${config.Prefix}oy\` yazabilirsin.
+<a:holo:812402157278068746> Bot top.gg üzerinden oy verip destek olmak için \`${config.Prefix}oy\` yazabilirsin.
     
       `)).catch(() => {});
     }
