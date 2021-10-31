@@ -83,7 +83,7 @@ client.on('message', async message => {
                 .setThumbnail(client.user.avatarURL())
                 .setTimestamp()
                 .setDescription(`
-   __**Sistemler:**__
+__**Sistemler:**__
 \`•\` **Character Limit:** ${Database.CharacterLimit ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
 \`•\` **Invite Guard:** ${Database.InviteGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
 \`•\` **Link Guard:** ${Database.LinkGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
@@ -91,12 +91,12 @@ client.on('message', async message => {
 \`•\` **BadWord Guard:** ${Database.BadWordGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
 \`•\` **Spam Guard:** ${Database.SpamGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
      
-   __**Whitelist:**__
+__**Whitelist:**__
 \`>\` Whitelist'te ki üyeler: ${Database.WhiteListMembers ? Database.WhiteListMembers.map(id => `<@${id}>`).join('\n') : 'Whitlist\'te hiç üye yok.'}
 \`>\` Whitelist'te ki roller: ${Database.WhiteListRoles ? Database.WhiteListRoles.map(id => `<@&${id}>`).join('\n') : 'Whitlist\'te hiç rol yok.'}
 \`>\` Whitelist'te ki kanallar: ${Database.WhiteListChannels ? Database.WhiteListChannels.map(id => `<#${id}>`).join('\n') : 'Whitlist\'te hiç kanal yok.'}
  
-   __**Diğer Sistemler:**__
+__**Diğer Sistemler:**__
 \`•\`**Filtreli Kelimeler**: ${Database.FiltredWords ? Database.FiltredWords.join() : 'Filtre\'de hiç kelime yok.'}
 \`•\`**Mute Rolü**: ${Database.MutedRoleID ? "<@&"+Database.MutedRoleID+">" : 'Mute Rolü ayarlanmamış.'}
 \`•\`**Mute Süresi**: ${Database.MuteDurationMinute ?""+Database.MuteDurationMinute+" Dakika." : '60'}
@@ -115,7 +115,7 @@ client.on('message', async message => {
                 .setThumbnail(client.user.avatarURL())
                 .setTimestamp()
                 .setDescription(`
-   __**SİSTEMLER**__
+__**SİSTEMLER**__
 \`•\` **Character Limit:**<:off:804779269577244693>
 \`•\` **Invite Guard:**<:off:804779269577244693>
 \`•\` **Link Guard:**<:off:804779269577244693>
@@ -123,15 +123,15 @@ client.on('message', async message => {
 \`•\` **BadWord Guard:**<:off:804779269577244693>
 \`•\` **Spam Guard:**<:off:804779269577244693>
 
-   __**WHİTELİST**__
+__**WHİTELİST**__
 \`>\` Whitelist'te ki üyeler: **Whitlist'te hiç üye yok.**
 \`>\` Whitelist'te ki roller: **Whitlist'te hiç rol yok.**
 \`>\` Whitelist'te ki kanallar: **Whitlist'te hiç kanal yok.**
 
-   \`•\`Komutları ve kullanımlarını görmek için ${config.Prefix}komutlar yazabilirsin.
-   \`•\`Botu sunucuna eklemek/davet etmek için ${config.Prefix}davet yazabilirsin.
-   \`•\`Destek almak/destek sunucusuna katılmak için ${config.Prefix}destek yazabilirsin.
-   \`•\`Bot top.gg üzerinden oy verip destek olmak için ${config.Prefix}oy yazabilirsin.
+\`•\`Komutları ve kullanımlarını görmek için ${config.Prefix}komutlar yazabilirsin.
+\`•\`Botu sunucuna eklemek/davet etmek için ${config.Prefix}davet yazabilirsin.
+\`•\`Destek almak/destek sunucusuna katılmak için ${config.Prefix}destek yazabilirsin.
+\`•\`Bot top.gg üzerinden oy verip destek olmak için ${config.Prefix}oy yazabilirsin.
 `)).catch(() => {}); }
 
     }
@@ -143,41 +143,41 @@ client.on('message', async message => {
             .setTitle('<a:holo:812402157278068746> Chat Guard Komutları')
             .setTimestamp()
             .setDescription(`
-    <:yann:804778651837005894> Komutları görmek için \`${config.Prefix}komutlar\` yazabilirsin.
+<:yann:804778651837005894> Komutları görmek için \`${config.Prefix}komutlar\` yazabilirsin.
 
-    <:yann:804778651837005894> Yardım için \`${config.Prefix}yardım\` yazabilirsin.
+<:yann:804778651837005894> Yardım için \`${config.Prefix}yardım\` yazabilirsin.
 
-    \`•\` Sunucunun durumunu görmek için: \`${config.Prefix}serverstatus\`
+\`•\` Sunucunun durumunu görmek için: \`${config.Prefix}serverstatus\`
 
-    \`•\` Üyeleri bir rolü veya kanalı whitelist'e almak için: \`${config.Prefix}whitelist [ekle veya kaldır] [Rol veya kanal veya üye](etiket veya id)\`
+\`•\` Üyeleri bir rolü veya kanalı whitelist'e almak için: \`${config.Prefix}whitelist [ekle veya kaldır] [Rol veya kanal veya üye](etiket veya id)\`
     
-    \`•\` Sunucuda Herhangi bir kelimenin  kullanılmaması yani filtreye eklemek için: \`${config.Prefix}filtre [ekle veya kaldır] [kelime]\`
+\`•\` Sunucuda Herhangi bir kelimenin  kullanılmaması yani filtreye eklemek için: \`${config.Prefix}filtre [ekle veya kaldır] [kelime]\`
 
-    \`•\` Mute rolünü ayarlamak için: \`${config.Prefix}muterole @role [etiket veya id] \`
+\`•\` Mute rolünü ayarlamak için: \`${config.Prefix}muterole @role [etiket veya id] \`
 
-    \`•\` Mute süresini ayarlamak için: \`${config.Prefix}mutesüre 10 [Süreyi dakika cinsinden girin] \`
+\`•\` Mute süresini ayarlamak için: \`${config.Prefix}mutesüre 10 [Süreyi dakika cinsinden girin] \`
 
-    \`•\` Log kanalını ayarlamak için: \`${config.Prefix}logchannel @channel [etiket veya id\`
+\`•\` Log kanalını ayarlamak için: \`${config.Prefix}logchannel @channel [etiket veya id\`
 
-    \`•\` Sunucuda ceza yemiş belirli bir kullanıcının cezasını kaldırmak için: \`${config.Prefix}cezakaldır @user [etiket veya id] \`
+\`•\` Sunucuda ceza yemiş belirli bir kullanıcının cezasını kaldırmak için: \`${config.Prefix}cezakaldır @user [etiket veya id] \`
     
-    \`•\` Sunucuda Çok uzun yazılıp sohbeti dolduran mesajların silinmesi için: \`${config.Prefix}characterlimit [aç veya kapat] \`
+\`•\` Sunucuda Çok uzun yazılıp sohbeti dolduran mesajların silinmesi için: \`${config.Prefix}characterlimit [aç veya kapat] \`
     
-    \`•\` Sunucuda Başka sunucuların davet linklerinin  paylaşılmaması için: \`${config.Prefix}inviteguard [aç veya kapat] \`
+\`•\` Sunucuda Başka sunucuların davet linklerinin  paylaşılmaması için: \`${config.Prefix}inviteguard [aç veya kapat] \`
     
-    \`•\` Sunucuda herhangi bir link paylaşılmaması için için: \`${config.Prefix}linkguard [aç veya kapat] \`
+\`•\` Sunucuda herhangi bir link paylaşılmaması için için: \`${config.Prefix}linkguard [aç veya kapat] \`
     
-    \`•\` Sunucuda Mesajında bir sürü kişinin etiketlenememesi için: \`${config.Prefix}masspingguard [aç veya kapat] \`
+\`•\` Sunucuda Mesajında bir sürü kişinin etiketlenememesi için: \`${config.Prefix}masspingguard [aç veya kapat] \`
 
-    \`•\` Sunucuda Küfür içerikli mesajlar atılmaması için: \`${config.Prefix}badwordguard [aç veya kapat] \`
+\`•\` Sunucuda Küfür içerikli mesajlar atılmaması için: \`${config.Prefix}badwordguard [aç veya kapat] \`
 
-    \`•\` Sunucuda spam yapılmaması için: \`${config.Prefix}spamguard [aç veya kapat] \`
+\`•\` Sunucuda spam yapılmaması için: \`${config.Prefix}spamguard [aç veya kapat] \`
 
-    \`•\` Botu sunucuna eklemek/davet etmek için \`${config.Prefix}davet\` yazabilirsin.
+\`•\` Botu sunucuna eklemek/davet etmek için \`${config.Prefix}davet\` yazabilirsin.
 
-    \`•\` Destek almak/destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
+\`•\` Destek almak/destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
 
-    \`•\` Bot top.gg üzerinden oy verip destek olmak için \`${config.Prefix}oy\` yazabilirsin.
+\`•\` Bot top.gg üzerinden oy verip destek olmak için \`${config.Prefix}oy\` yazabilirsin.
     
       `)).catch(() => {});
     }
@@ -189,41 +189,41 @@ client.on('message', async message => {
             .setTitle('<:yann:804778651837005894> Chat Guard Komutları')
             .setTimestamp()
             .setDescription(`
-    :star: Komutları görmek için \`${config.Prefix}komutlar\` yazabilirsin.
+:star: Komutları görmek için \`${config.Prefix}komutlar\` yazabilirsin.
 
-    :star: Yardım için \`${config.Prefix}yardım\` yazabilirsin.
+:star: Yardım için \`${config.Prefix}yardım\` yazabilirsin.
 
-    \`•\` Sunucunun durumunu görmek için: \`${config.Prefix}serverstatus\`
+\`•\` Sunucunun durumunu görmek için: \`${config.Prefix}serverstatus\`
 
-    \`•\` Üyeleri bir rolü veya kanalı whitelist'e almak için: \`${config.Prefix}whitelist [ekle veya kaldır] [Rol veya kanal veya üye](etiket veya id)\`
+\`•\` Üyeleri bir rolü veya kanalı whitelist'e almak için: \`${config.Prefix}whitelist [ekle veya kaldır] [Rol veya kanal veya üye](etiket veya id)\`
     
-    \`•\` Sunucuda Herhangi bir kelimenin  kullanılmaması yani filtreye eklemek için: \`${config.Prefix}filtre [ekle veya kaldır] [kelime]\`
+\`•\` Sunucuda Herhangi bir kelimenin  kullanılmaması yani filtreye eklemek için: \`${config.Prefix}filtre [ekle veya kaldır] [kelime]\`
 
-    \`•\` Mute rolünü ayarlamak için: \`${config.Prefix}muterole @role [etiket veya id] \`
+\`•\` Mute rolünü ayarlamak için: \`${config.Prefix}muterole @role [etiket veya id] \`
 
-    \`•\` Mute süresini ayarlamak için: \`${config.Prefix}mutesüre 10 [Süreyi dakika cinsinden girin] \`
+\`•\` Mute süresini ayarlamak için: \`${config.Prefix}mutesüre 10 [Süreyi dakika cinsinden girin] \`
 
-    \`•\` Log kanalını ayarlamak için: \`${config.Prefix}logchannel @channel [etiket veya id\`
+\`•\` Log kanalını ayarlamak için: \`${config.Prefix}logchannel @channel [etiket veya id\`
 
-    \`•\` Sunucuda ceza yemiş belirli bir kullanıcının cezasını kaldırmak için: \`${config.Prefix}cezakaldır @user [etiket veya id] \`
+\`•\` Sunucuda ceza yemiş belirli bir kullanıcının cezasını kaldırmak için: \`${config.Prefix}cezakaldır @user [etiket veya id] \`
     
-    \`•\` Sunucuda Çok uzun yazılıp sohbeti dolduran mesajların silinmesi için: \`${config.Prefix}characterlimit [aç veya kapat] \`
+\`•\` Sunucuda Çok uzun yazılıp sohbeti dolduran mesajların silinmesi için: \`${config.Prefix}characterlimit [aç veya kapat] \`
     
-    \`•\` Sunucuda Başka sunucuların davet linklerinin  paylaşılmaması için: \`${config.Prefix}inviteguard [aç veya kapat] \`
+\`•\` Sunucuda Başka sunucuların davet linklerinin  paylaşılmaması için: \`${config.Prefix}inviteguard [aç veya kapat] \`
     
-    \`•\` Sunucuda herhangi bir link paylaşılmaması için için: \`${config.Prefix}linkguard [aç veya kapat] \`
+\`•\` Sunucuda herhangi bir link paylaşılmaması için için: \`${config.Prefix}linkguard [aç veya kapat] \`
     
-    \`•\` Sunucuda Mesajında bir sürü kişinin etiketlenememesi için: \`${config.Prefix}masspingguard [aç veya kapat] \`
+\`•\` Sunucuda Mesajında bir sürü kişinin etiketlenememesi için: \`${config.Prefix}masspingguard [aç veya kapat] \`
 
-    \`•\` Sunucuda Küfür içerikli mesajlar atılmaması için: \`${config.Prefix}badwordguard [aç veya kapat] \`
+\`•\` Sunucuda Küfür içerikli mesajlar atılmaması için: \`${config.Prefix}badwordguard [aç veya kapat] \`
 
-    \`•\` Sunucuda spam yapılmaması için: \`${config.Prefix}spamguard [aç veya kapat] \`
+\`•\` Sunucuda spam yapılmaması için: \`${config.Prefix}spamguard [aç veya kapat] \`
 
-    \`•\` Botu sunucuna eklemek/davet etmek için \`${config.Prefix}davet\` yazabilirsin.
+\`•\` Botu sunucuna eklemek/davet etmek için \`${config.Prefix}davet\` yazabilirsin.
 
-    \`•\` Destek almak/destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
+\`•\` Destek almak/destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
 
-    \`•\` Bot top.gg üzerinden oy verip destek olmak için \`${config.Prefix}oy\` yazabilirsin.
+\`•\` Bot top.gg üzerinden oy verip destek olmak için \`${config.Prefix}oy\` yazabilirsin.
     
       `)).catch(() => {});
     }
