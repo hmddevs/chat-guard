@@ -83,29 +83,29 @@ client.on('message', async message => {
                 .setThumbnail(client.user.avatarURL())
                 .setTimestamp()
                 .setDescription(`
-        __**Sistemler:**__
-        \`•\` **Character Limit:** ${Database.CharacterLimit ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
-        \`•\` **Invite Guard:** ${Database.InviteGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
-        \`•\` **Link Guard:** ${Database.LinkGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
-        \`•\` **MassPing Guard:** ${Database.MassPingGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
-        \`•\` **BadWord Guard:** ${Database.BadWordGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
-        \`•\` **Spam Guard:** ${Database.SpamGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
+   __**Sistemler:**__
+\`•\` **Character Limit:** ${Database.CharacterLimit ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
+\`•\` **Invite Guard:** ${Database.InviteGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
+\`•\` **Link Guard:** ${Database.LinkGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
+\`•\` **MassPing Guard:** ${Database.MassPingGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
+\`•\` **BadWord Guard:** ${Database.BadWordGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
+\`•\` **Spam Guard:** ${Database.SpamGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
      
-        __**Whitelist:**__
-        \`>\` Whitelist'te ki üyeler: ${Database.WhiteListMembers ? Database.WhiteListMembers.map(id => `<@${id}>`).join('\n') : 'Whitlist\'te hiç üye yok.'}
-        \`>\` Whitelist'te ki roller: ${Database.WhiteListRoles ? Database.WhiteListRoles.map(id => `<@&${id}>`).join('\n') : 'Whitlist\'te hiç rol yok.'}
-        \`>\` Whitelist'te ki kanallar: ${Database.WhiteListChannels ? Database.WhiteListChannels.map(id => `<#${id}>`).join('\n') : 'Whitlist\'te hiç kanal yok.'}
+   __**Whitelist:**__
+\`>\` Whitelist'te ki üyeler: ${Database.WhiteListMembers ? Database.WhiteListMembers.map(id => `<@${id}>`).join('\n') : 'Whitlist\'te hiç üye yok.'}
+\`>\` Whitelist'te ki roller: ${Database.WhiteListRoles ? Database.WhiteListRoles.map(id => `<@&${id}>`).join('\n') : 'Whitlist\'te hiç rol yok.'}
+\`>\` Whitelist'te ki kanallar: ${Database.WhiteListChannels ? Database.WhiteListChannels.map(id => `<#${id}>`).join('\n') : 'Whitlist\'te hiç kanal yok.'}
  
-        __**Diğer Sistemler:**__
-        \`•\`**Filtreli Kelimeler**: ${Database.FiltredWords ? Database.FiltredWords.join() : 'Filtre\'de hiç kelime yok.'}
-        \`•\`**Mute Rolü**: ${Database.MutedRoleID ? "<@&"+Database.MutedRoleID+">" : 'Mute Rolü ayarlanmamış.'}
-        \`•\`**Mute Süresi**: ${Database.MuteDurationMinute ?""+Database.MuteDurationMinute+" Dakika." : '60'}
-        \`•\`**Log Kanalı**: ${Database.PunishLogChannelID ? "<#"+Database.PunishLogChannelID+">" : 'Log kanalı ayarlanmamış.'}
+   __**Diğer Sistemler:**__
+\`•\`**Filtreli Kelimeler**: ${Database.FiltredWords ? Database.FiltredWords.join() : 'Filtre\'de hiç kelime yok.'}
+\`•\`**Mute Rolü**: ${Database.MutedRoleID ? "<@&"+Database.MutedRoleID+">" : 'Mute Rolü ayarlanmamış.'}
+\`•\`**Mute Süresi**: ${Database.MuteDurationMinute ?""+Database.MuteDurationMinute+" Dakika." : '60'}
+\`•\`**Log Kanalı**: ${Database.PunishLogChannelID ? "<#"+Database.PunishLogChannelID+">" : 'Log kanalı ayarlanmamış.'}
 
-        \`•\`Komutları ve kullanımlarını görmek için ${config.Prefix}komutlar yazabilirsin.
-        \`•\`Botu sunucuna eklemek/davet etmek için ${config.Prefix}davet yazabilirsin.
-        \`•\`Destek almak/destek sunucusuna katılmak için ${config.Prefix}destek yazabilirsin.
-        \`•\`Bot top.gg üzerinden oy verip destek olmak için ${config.Prefix}oy yazabilirsin.
+\`•\`Komutları ve kullanımlarını görmek için \`${config.Prefix}komutlar\` yazabilirsin.
+\`•\`Botu sunucuna eklemek/davet etmek için \`${config.Prefix}davet\` yazabilirsin.
+\`•\`Destek almak/destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
+\`•\`Bot top.gg üzerinden oy verip destek olmak için \`${config.Prefix}oy\` yazabilirsin.
   `)).catch(() => {}); }
 
         if(!Database) {
@@ -115,18 +115,18 @@ client.on('message', async message => {
                 .setThumbnail(client.user.avatarURL())
                 .setTimestamp()
                 .setDescription(`
-    __**SİSTEMLER**__
-    \`•\` **Character Limit:**<:off:804779269577244693>
-    \`•\` **Invite Guard:**<:off:804779269577244693>
-    \`•\` **Link Guard:**<:off:804779269577244693>
-    \`•\` **MassPing Guard:**<:off:804779269577244693>
-    \`•\` **BadWord Guard:**<:off:804779269577244693>
-    \`•\` **Spam Guard:**<:off:804779269577244693>
+   __**SİSTEMLER**__
+\`•\` **Character Limit:**<:off:804779269577244693>
+\`•\` **Invite Guard:**<:off:804779269577244693>
+\`•\` **Link Guard:**<:off:804779269577244693>
+\`•\` **MassPing Guard:**<:off:804779269577244693>
+\`•\` **BadWord Guard:**<:off:804779269577244693>
+\`•\` **Spam Guard:**<:off:804779269577244693>
 
    __**WHİTELİST**__
-   \`>\` Whitelist'te ki üyeler: **Whitlist'te hiç üye yok.**
-   \`>\` Whitelist'te ki roller: **Whitlist'te hiç rol yok.**
-   \`>\` Whitelist'te ki kanallar: **Whitlist'te hiç kanal yok.**
+\`>\` Whitelist'te ki üyeler: **Whitlist'te hiç üye yok.**
+\`>\` Whitelist'te ki roller: **Whitlist'te hiç rol yok.**
+\`>\` Whitelist'te ki kanallar: **Whitlist'te hiç kanal yok.**
 
    \`•\`Komutları ve kullanımlarını görmek için ${config.Prefix}komutlar yazabilirsin.
    \`•\`Botu sunucuna eklemek/davet etmek için ${config.Prefix}davet yazabilirsin.
