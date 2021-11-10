@@ -7,7 +7,7 @@ const config = {
     BotOwners: ["387675598044135436"],
     Custom_Status_Text: ".oy | .davet",
     Custom_Status_Type: 'PLAYING', // => PLAYING / WATCHING / LISTENING
-    Custom_Status: 'idle' // => dnd / idle / online / invisible
+    Custom_Status: 'dnd' // => dnd / idle / online / invisible
 };
   
 module.exports = config;
