@@ -3,7 +3,7 @@ const { Client } = require('discord.js');
 const client = global.client = new Client({ disableEveryone: true});
 const process = global.process;
 
-js
+
 const { MessageEmbed } = require("discord.js") 
 const moment = require("moment") 
 const embed = new MessageEmbed().setColor("BLUE").setAuthor("Yeni Sunucuya Eklendi.") 
