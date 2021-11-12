@@ -1,5 +1,4 @@
 const { Client } = require('discord.js');
-const client = require('discord.js');
 
 const client = global.client = new Client({ disableEveryone: true});
 const process = global.process;
