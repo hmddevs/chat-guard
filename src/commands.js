@@ -136,7 +136,7 @@ __**WHİTELİST**__
 
     }
 
-    if(command.toLowerCase() === 'komutlar7') {
+    if(command.toLowerCase() === 'komutlar') {
         message.channel.send(new MessageEmbed()
             .setColor("#5865F2")
             .setAuthor(message.author.tag, message.author.avatarURL({ dynamic: true }))
