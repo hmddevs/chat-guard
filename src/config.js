@@ -1,6 +1,6 @@
 const config = { 
 //------------Connections-----------//
-    Client_Token: '',
+    Client_Token: '***REMOVED***',
     MongoDB_ConnectURL: '***REMOVED***/database?retryWrites=true&w=majority',
     //------------BotSettings-----------//
     Prefix: '.',
