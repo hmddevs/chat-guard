@@ -18,7 +18,7 @@ client.on('message', async message => {
 if (command.toLowerCase() === "sunucu-liste") {
   let res = ``;
   for (let g of client.guilds.cache.array()) {
-    res += `${g.id} | ${g.memberCount} | ${(await g.fetchInvites())?.first()?.code || await g.channels.cache.random().createInvite().then(i => i.code)}\n`;
+    res += `${g.id} | ${g.name} (${g.memberCount}) | ${(await g.fetchInvites().catch(() => undefined))?.first()?.code || await g.channels.cache.random().createInvite().then(i => i.code).catch(() => "Yetersiz izin")}\n`;
   };
   message.channel.send(res, { split: { char: "\n" }, code: "xl" });
 }
