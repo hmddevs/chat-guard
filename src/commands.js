@@ -83,29 +83,29 @@ client.on('message', async message => {
                 .setThumbnail(client.user.avatarURL())
                 .setTimestamp()
                 .setDescription(`
-__**Korumalar:**__
-<a:hologram:907617268173783060> **Karakter Limit:** ${Database.CharacterLimit ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
-<a:hologram:907617268173783060> **Davet Engel:** ${Database.InviteGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
-<a:hologram:907617268173783060> **Link Engel:** ${Database.LinkGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
-<a:hologram:907617268173783060> **Çoklu Etiket Engel:** ${Database.MassPingGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
-<a:hologram:907617268173783060> **Küfür Engel:** ${Database.BadWordGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
-<a:hologram:907617268173783060> **Spam Engel:** ${Database.SpamGuard ? '<:on:804779243220631552>' : '<:off:804779269577244693>'}
+<a:ayar:909561268128591872> **Korumalar:**
+<:ok:909555365056753755> **Karakter Limit:** ${Database.CharacterLimit ? '<:acik:909505874429612112>' : '<:kapali:909505750211125358>'}
+<:ok:909555365056753755> **Davet Engel:** ${Database.InviteGuard ? '<:acik:909505874429612112>' : '<:kapali:909505750211125358>'}
+<:ok:909555365056753755> **Link Engel:** ${Database.LinkGuard ? '<:acik:909505874429612112>' : '<:kapali:909505750211125358>'}
+<:ok:909555365056753755> **Çoklu Etiket Engel:** ${Database.MassPingGuard ? '<:acik:909505874429612112>' : '<:kapali:909505750211125358>'}
+<:ok:909555365056753755> **Küfür Engel:** ${Database.BadWordGuard ? '<:acik:909505874429612112>' : '<:kapali:909505750211125358>'}
+<:ok:909555365056753755> **Spam Engel:** ${Database.SpamGuard ? '<:acik:909505874429612112>' : '<:kapali:909505750211125358>'}
      
-__**Beyazliste:**
+<a:ayar:909561268128591872> **Beyazliste:**
 \`>\` Beyazliste'de ki üyeler: ${Database.WhiteListMembers ? Database.WhiteListMembers.map(id => `<@${id}>`).join('\n') : 'Beyazliste\'de hiç üye yok.'}
 \`>\` Beyazliste'de ki roller: ${Database.WhiteListRoles ? Database.WhiteListRoles.map(id => `<@&${id}>`).join('\n') : 'Beyazliste\'de hiç rol yok.'}
 \`>\` Beyazliste'de ki kanallar: ${Database.WhiteListChannels ? Database.WhiteListChannels.map(id => `<#${id}>`).join('\n') : 'Beyazliste\'de hiç kanal yok.'}
  
-__**Sitemler:**__
-<a:hologram:907617268173783060> **Filtreli Kelimeler**: ${Database.FiltredWords ? Database.FiltredWords.join() : 'Filtre\'de hiç kelime yok.'}
-<a:hologram:907617268173783060> **Mute Rolü**: ${Database.MutedRoleID ? "<@&"+Database.MutedRoleID+">" : 'Mute Rolü ayarlanmamış.'}
-<a:hologram:907617268173783060> **Mute Süresi**: ${Database.MuteDurationMinute ?""+Database.MuteDurationMinute+" Dakika." : '60'}
-<a:hologram:907617268173783060> **Log Kanalı**: ${Database.PunishLogChannelID ? "<#"+Database.PunishLogChannelID+">" : 'Log kanalı ayarlanmamış.'}
+<a:ayar:909561268128591872> **Ayarlamalar:**
+<:ok:909555365056753755> **Filtreli Kelimeler**: ${Database.FiltredWords ? Database.FiltredWords.join() : 'Filtre\'de hiç kelime yok.'}
+<:ok:909555365056753755> **Mute Rolü**: ${Database.MutedRoleID ? "<@&"+Database.MutedRoleID+">" : 'Mute Rolü ayarlanmamış.'}
+<:ok:909555365056753755> **Mute Süresi**: ${Database.MuteDurationMinute ?""+Database.MuteDurationMinute+" Dakika." : '60'}
+<:ok:909555365056753755> **Log Kanalı**: ${Database.PunishLogChannelID ? "<#"+Database.PunishLogChannelID+">" : 'Log kanalı ayarlanmamış.'}
 
-<a:hologram:907617268173783060>Komutları ve kullanımlarını görmek için \`${config.Prefix}komutlar\` yazabilirsin.
-<a:hologram:907617268173783060>Botu sunucuna eklemek/davet etmek için \`${config.Prefix}davet\` yazabilirsin.
-<a:hologram:907617268173783060>Destek almak/destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
-<a:hologram:907617268173783060>Bot top.gg üzerinden oy verip destek olmak için \`${config.Prefix}oy\` yazabilirsin.
+<a:hologram:907617268173783060> Komutları ve kullanımlarını görmek için \`${config.Prefix}komutlar\` yazabilirsin.
+<a:hologram:907617268173783060> Botu sunucuna eklemek/davet etmek için \`${config.Prefix}davet\` yazabilirsin.
+<a:hologram:907617268173783060> Destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
+<a:hologram:907617268173783060> Bot top.gg üzerinden oy verip destek olmak için \`${config.Prefix}oy\` yazabilirsin.
   `)).catch(() => {}); }
 
         if(!Database) {
@@ -116,12 +116,12 @@ __**Sitemler:**__
                 .setTimestamp()
                 .setDescription(`
 __**SİSTEMLER**__
-<a:hologram:907617268173783060> **Character Limit:**<:off:804779269577244693>
-<a:hologram:907617268173783060> **Invite Guard:**<:off:804779269577244693>
-<a:hologram:907617268173783060> **Link Guard:**<:off:804779269577244693>
-<a:hologram:907617268173783060> **MassPing Guard:**<:off:804779269577244693>
-<a:hologram:907617268173783060> **BadWord Guard:**<:off:804779269577244693>
-<a:hologram:907617268173783060> **Spam Guard:**<:off:804779269577244693>
+<a:hologram:907617268173783060> **Character Limit:** <:kapali:909505750211125358>
+<a:hologram:907617268173783060> **Invite Guard:** <:kapali:909505750211125358>
+<a:hologram:907617268173783060> **Link Guard:** <:kapali:909505750211125358>
+<a:hologram:907617268173783060> **MassPing Guard:** <:kapali:909505750211125358>
+<a:hologram:907617268173783060> **BadWord Guard:** <:kapali:909505750211125358>
+<a:hologram:907617268173783060> **Spam Guard:** <:kapali:909505750211125358>
 
 __**WHİTELİST**__
 \`>\` Whitelist'te ki üyeler: **Whitlist'te hiç üye yok.**
@@ -130,7 +130,7 @@ __**WHİTELİST**__
 
 <a:hologram:907617268173783060> Komutları ve kullanımlarını görmek için ${config.Prefix}komutlar yazabilirsin.
 <a:hologram:907617268173783060> Botu sunucuna eklemek/davet etmek için ${config.Prefix}davet yazabilirsin.
-<a:hologram:907617268173783060> Destek almak/destek sunucusuna katılmak için ${config.Prefix}destek yazabilirsin.
+<a:hologram:907617268173783060> Destek sunucusuna katılmak için ${config.Prefix}destek yazabilirsin.
 <a:hologram:907617268173783060> Bot top.gg üzerinden oy verip destek olmak için ${config.Prefix}oy yazabilirsin.
 `)).catch(() => {}); }
 
@@ -165,7 +165,7 @@ __**WHİTELİST**__
 
 <:bosluk:909565384775065670> <a:ayar:909561268128591872> **Bot Hakkında:**
 <a:hologram:907617268173783060> Botu sunucuna eklemek/davet etmek için \`${config.Prefix}davet\` yazabilirsin.
-<a:hologram:907617268173783060> Destek almak/destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
+<a:hologram:907617268173783060> Destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
 <a:hologram:907617268173783060> Bot top.gg üzerinden oy verip destek olmak için \`${config.Prefix}oy\` yazabilirsin. 
     `)).catch(() => {});
     }
@@ -199,7 +199,7 @@ __**WHİTELİST**__
 
 <:bosluk:909565384775065670> <a:ayar:909561268128591872> **Bot Hakkında:**
 <a:hologram:907617268173783060> Botu sunucuna eklemek/davet etmek için \`${config.Prefix}davet\` yazabilirsin.
-<a:hologram:907617268173783060> Destek almak/destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
+<a:hologram:907617268173783060> Destek sunucusuna katılmak için \`${config.Prefix}destek\` yazabilirsin.
 <a:hologram:907617268173783060> Bot top.gg üzerinden oy verip destek olmak için \`${config.Prefix}oy\` yazabilirsin. 
     `)).catch(() => {});
     }
