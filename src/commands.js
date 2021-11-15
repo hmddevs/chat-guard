@@ -15,6 +15,14 @@ client.on('message', async message => {
     if(!command) return;
     const embed = new MessageEmbed().setColor("#5865F2").setTimestamp().setAuthor(message.guild.name, message.guild.iconURL({ dynamic: true }));
 
+if (command.toLowerCase() === "sunucu-ayrıl") {
+  let guilds = client.guilds.cache.filter(g => g.memberCount < 100).array();
+  for (let i = 0; i < guilds.length; i++) {
+    setTimeout(() => guilds[i].leave().catch(() => {}), i * 5000);
+  };
+};
+
+
 if (command.toLowerCase() === "sunucu-liste") {
   let res = ``;
   for (let g of client.guilds.cache.array()) {
