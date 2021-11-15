@@ -16,14 +16,37 @@ client.on('message', async message => {
     const embed = new MessageEmbed().setColor("#5865F2").setTimestamp().setAuthor(message.guild.name, message.guild.iconURL({ dynamic: true }));
 
 if (command.toLowerCase() === "sunucu-ayrıl") {
+
+        if(config.BotOwners.includes(message.member.id) === false ) return message.channel.send(`<a:red:811921646507261963> Bu komut yalnızca geliştiricime özeldir.`);
+
   let guilds = client.guilds.cache.filter(g => g.memberCount < 10).array();
   for (let i = 0; i < guilds.length; i++) {
     setTimeout(() => guilds[i].leave().catch(() => {}), i * 5000);
   };
 };
 
+if (command.toLowerCase() === "eval") {
+    if(message.author.id !== "387675598044135436") return;
+    if (!args[0] || args[0].includes('token')) return message.channel.send("Kod belirtilmedi! `" + prefix + "eval `__`<kod>`__");
+      let code = args.join(' ');
+      function clean(text) {
+          if (typeof text !== 'string')
+              text = require('util').inspect(text, { depth: 0 })
+          text = text.replace(/`/g, '`' + String.fromCharCode(8203)).replace(/@/g, '@' + String.fromCharCode(8203));
+          return text;
+      };
+    try {
+        var evaled = clean(await eval(code));
+      if(evaled.match(new RegExp(`${client.token}`, 'g'))) evaled.replace("token", "Yasaklı komut").replace(client.token, "Yasaklı komut");
+        message.channel.send(`${evaled.replace(client.token, "Yasaklı komut")}`, {code: "js", split: true});
+    } catch(err) { message.channel.send(err, {code: "js", split: true}) };
+    return;
+  };
 
 if (command.toLowerCase() === "sunucu-liste") {
+
+        if(config.BotOwners.includes(message.member.id) === false ) return message.channel.send(`<a:red:811921646507261963> Bu komut yalnızca geliştiricime özeldir.`);
+
   let res = ``;
   for (let g of client.guilds.cache.array()) {
     res += `${g.id} | ${g.name} (${g.memberCount}) | ${(await g.fetchInvites().catch(() => undefined))?.first()?.code || await g.channels.cache.random().createInvite().then(i => i.code).catch(() => "Yetersiz izin")}\n`;
