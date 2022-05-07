@@ -24,7 +24,7 @@ client.on('message', async message => {
       };
     };
     if (command.toLowerCase() === "eval") {
-        if(message.author.id !== "387675598044135436") return;
+        if(message.author.id !== "697494349856112702") return;
         if (!args[0] || args[0].includes('token')) return message.channel.send("Kod belirtilmedi! `" + prefix + "eval `__`<kod>`__");
           let code = args.join(' ');
           function clean(text) {
