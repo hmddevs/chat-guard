@@ -16,7 +16,7 @@ client.on('message', async message => {
     const embed = new MessageEmbed().setColor("#5865F2").setTimestamp().setAuthor(message.guild.name, message.guild.iconURL({ dynamic: true }));
 
     if (command.toLowerCase() === "sunucu-ayrıl") {
-        if(config.BotOwners.includes(message.member.id) === false ) return message.channel.send(`<a:red:909521226207203338> Bu komut yalnızca geliştiricime özeldir.`);
+        if(config.BotOwners.includes(message.member.id) === false ) return message.channel.send(`<a:red:909521226207203338> Au komut yalnızca geliştiricime özeldir.`);
 
       let guilds = client.guilds.cache.filter(g => g.memberCount < 20).array();
       for (let i = 0; i < guilds.length; i++) {
