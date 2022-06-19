@@ -5,7 +5,7 @@ const config = {
     //------------BotSettings-----------//
     Prefix: '.',
     BotOwners: ["697494349856112702"],
-    Custom_Status_Text: ".oy | .yardım",
+    Custom_Status_Text: "despiadado.",
     Custom_Status_Type: 'WATCHING', // => PLAYING / WATCHING / LISTENING
     Custom_Status: 'idle' // => dnd / idle / online / invisible
 };
