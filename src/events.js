@@ -40,17 +40,17 @@ client.on('message', async (message) => {
     if (LinkGuardReg.test(message.content)){
         if(Database.LinkGuard === false || Database.LinkGuard === null || !Database.LinkGuard) return;
         if (message && message.deletable) message.delete({ timeout: 0130 }).catch(() => {});
-        return message.channel.send(Embed.setDescription('<a:red:909521226207203338> <@'+message.author.id+'>, Link içeren mesajlar kullanman yasak!')).then(x => x.delete({timeout: 5000})).catch(() => {});
+        return message.channel.send(Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, Link içeren mesajlar kullanman yasak!')).then(x => x.delete({timeout: 5000})).catch(() => {});
     }
     if(BadWord(message.content) === true) { 
         if(Database.BadWordGuard === false || Database.BadWordGuard === null || !Database.BadWordGuard) return;
         if (message && message.deletable) message.delete({ timeout: 0140 }).catch(() => {});
-        return message.channel.send(Embed.setDescription('<a:red:909521226207203338> <@'+message.author.id+'>, Küfür içeren mesajlar kullanman yasak!')).then(x => x.delete({timeout: 5000})).catch(() => {});
+        return message.channel.send(Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, Küfür içeren mesajlar kullanman yasak!')).then(x => x.delete({timeout: 5000})).catch(() => {});
     }
    
     if (Database && Database.FiltredWords.some(Word => ` ${message.content.toLowerCase()} `.includes(` ${Word} `)) === true) {
      if (message && message.deletable) message.delete({ timeout: 0150 }).catch(() => {});
-     return message.channel.send(Embed.setDescription('<a:red:909521226207203338> <@'+message.author.id+'>, Filtrelenmiş kelime içeren mesajlar kullanman yasak!')).then(x => x.delete({timeout: 5000})).catch(() => {});
+     return message.channel.send(Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, Filtrelenmiş kelime içeren mesajlar kullanman yasak!')).then(x => x.delete({timeout: 5000})).catch(() => {});
     }
 });
 
@@ -77,17 +77,17 @@ client.on('messageUpdate', async (oldMessage, newMessage) => {
      if (LinkGuardReg.test(newMessage.content)){
          if(Database.LinkGuard === false || Database.LinkGuard === null || !Database.LinkGuard) return;
          if (newMessage && newMessage.deletable) newMessage.delete({ timeout: 0130 }).catch(() => {});
-         return newMessage.channel.send(Embed.setDescription('<a:red:909521226207203338> <@'+newMessage.author.id+'>, Link içeren mesajlar kullanman yasak!')).then(x => x.delete({timeout: 5000})).catch(() => {});
+         return newMessage.channel.send(Embed.setDescription('<a:red:990277321414045767> <@'+newMessage.author.id+'>, Link içeren mesajlar kullanman yasak!')).then(x => x.delete({timeout: 5000})).catch(() => {});
      }
      if(BadWord(newMessage.content) === true) { 
          if(Database.BadWordGuard === false || Database.BadWordGuard === null || !Database.BadWordGuard) return;
          if (newMessage && newMessage.deletable) newMessage.delete({ timeout: 0140 }).catch(() => {});
-         return newMessage.channel.send(Embed.setDescription('<a:red:909521226207203338> <@'+newMessage.author.id+'>, Küfür içeren mesajlar kullanman yasak!')).then(x => x.delete({timeout: 5000})).catch(() => {});
+         return newMessage.channel.send(Embed.setDescription('<a:red:990277321414045767> <@'+newMessage.author.id+'>, Küfür içeren mesajlar kullanman yasak!')).then(x => x.delete({timeout: 5000})).catch(() => {});
      }
     
     if (Database && Database.FiltredWords.some(Word => ` ${newMessage.content.toLowerCase()} `.includes(` ${Word} `)) === true) {
      if (newMessage && newMessage.deletable) newMessage.delete({ timeout: 0150 }).catch(() => {});
-     return newMessage.channel.send(Embed.setDescription('<a:red:909521226207203338> <@'+newMessage.author.id+'>, Filtrelenmiş kelime içeren mesajlar kullanman yasak!')).then(x => x.delete({timeout: 5000})).catch(() => {});
+     return newMessage.channel.send(Embed.setDescription('<a:red:990277321414045767> <@'+newMessage.author.id+'>, Filtrelenmiş kelime içeren mesajlar kullanman yasak!')).then(x => x.delete({timeout: 5000})).catch(() => {});
     }
  });
  
