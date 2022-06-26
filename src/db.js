@@ -4,7 +4,7 @@ const VeryCoolSchema = new Schema({
     _id: Schema.Types.ObjectId,
     ServerID: { type: String, default: '' },
     MutedRoleID: { type: String },
-    MuteDurationMinute: { type: Number, default: 60 },
+    MuteDurationMinute: { type: Number, default: 30 },
     PunishLogChannelID: { type: String },
     FiltredWords:  { type: Array, default: [] },
     WhiteListMembers:  { type: Array, default: [] },
