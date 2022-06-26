@@ -112,8 +112,8 @@ async function Spam(message) {
     client.cache.mesajlar.push(suankimesaj);
 
     const spammesaji = client.cache.mesajlar.filter((db) => db.authorID === message.author.id && db.guildID === message.guild.id);
-    const spamsayısı = spammesaji.filter((db) => db.sentTimestamp > (Date.now() - 2500));
-    if(spamsayısı.length >= 3){await reset(); return result = true; }
+    const spamsayısı = spammesaji.filter((db) => db.sentTimestamp > (Date.now() - 5000));
+    if(spamsayısı.length >= 7){await reset(); return result = true; }
     return result;
 }
 
