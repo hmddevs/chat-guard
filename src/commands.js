@@ -560,7 +560,7 @@ client.on('message', async message => {
 
     }
     if(command.toLowerCase() === 'çokluetiket') {
-        if(config.BotOwners.includes(message.member.id) === false && !message.member.hasPermission(8)) return message.channel.send(`<a:red:990277321414045767> Aar komutlarını kullanabilmen için yönetici olman gerek.`);
+        if(config.BotOwners.includes(message.member.id) === false && !message.member.hasPermission(8)) return message.channel.send(`<a:red:990277321414045767> Ayar komutlarını kullanabilmen için yönetici olman gerek.`);
 
         if (!args[0]) return message.channel.send(embed.setDescription('<a:red:990277321414045767> Örnek kullanım: '+config.Prefix+'çokluetiket aç/kapat.')).catch(() => {});
 
