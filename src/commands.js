@@ -3,7 +3,6 @@ const db = require('./db');
 const config = require('./config');
 const { EmbedBuilder, InteractionType, PermissionsBitField, ChannelType } = require('discord.js');
 const moment = require("moment"); require("moment-duration-format"); moment.locale("tr");
-var os = require('os');
 
 client.on('interactionCreate', async interaction => {
 if(interaction.type !== InteractionType.ApplicationCommand) return;
@@ -48,7 +47,7 @@ if(interaction.commandName  === 'info') {
 <a:hologram:990277266892263475> **${client.guilds.cache.reduce((acc, currentValue) => acc + currentValue.memberCount, 0)}** kullanıcıya hizmet veriyorum.
 <a:hologram:990277266892263475> Pingim: **${client.ws.ping}**
 <a:hologram:990277266892263475> **${moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]")}** dir aktifim.
-<a:hologram:990277266892263475> Ram kullanımı: **234.62/8000 MB**
+<a:hologram:990277266892263475> Ram kullanımı: **234.62/8000.00 MB**
 `)] });
 };
 
