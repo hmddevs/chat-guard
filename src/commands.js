@@ -8,6 +8,20 @@ client.on('interactionCreate', async interaction => {
 if(interaction.type !== InteractionType.ApplicationCommand) return;
 const embed = new EmbedBuilder().setColor("#5865F2").setTimestamp().setAuthor({ name: interaction.guild.name, iconURL: interaction.guild.iconURL({ dynamic: true })});
 
+    
+if(interaction.commandName === 'gizlilik-politikası') {
+    interaction.reply({ embeds: [new EmbedBuilder()
+    .setColor("#5865F2")
+    .setAuthor({ name: interaction.member.user.tag, iconURL: interaction.member.user.avatarURL({ dynamic: true })})
+    .setThumbnail(client.user.avatarURL())
+    .setTimestamp()
+    .setDescription(`
+<a:hologram:990277266892263475> [Gizlilik Politikası için tıkla!](https://github.com/Chat-Guard/Chat-Guard/wiki/Gizlilik-Politikas%C4%B1)
+<a:hologram:990277266892263475> [Kullanım Koşulları için tıkla!](https://github.com/Chat-Guard/Chat-Guard/wiki/Kullan%C4%B1m-Ko%C5%9Fullar%C4%B1i)
+`)]});
+};
+    
+    
 if(interaction.commandName === 'davet') {
     interaction.reply({ embeds: [new EmbedBuilder()
     .setColor("#5865F2")
