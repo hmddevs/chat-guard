@@ -16,7 +16,7 @@ client.on('ready', async () => {
 
 const commands = new Array();
  commands.push({
-    name: 'gizlilik-politikasi',
+    name: 'gizlilik-politikası',
     description: "Botun Gizlilik Politikasını gösterir.",
     type:  ApplicationCommandType.ChatInput,
     options: null,
