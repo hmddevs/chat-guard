@@ -15,6 +15,12 @@ client.on('ready', async () => {
  console.log('SORUNSUZ - '+ client.user.tag +' ismiyle API\'ye bağlanıldı ve bot hazır durumda.');
 
 const commands = new Array();
+ commands.push({
+    name: 'gizlilik-politikasi',
+    description: "Botun Gizlilik Politikasını gösterir.",
+    type:  ApplicationCommandType.ChatInput,
+    options: null,
+});
 commands.push({
     name: 'davet',
     description: "Botu sunucuya davet etmeninizi sağlar.",
