@@ -17,7 +17,7 @@ if(interaction.commandName === 'gizlilik-politikası') {
     .setTimestamp()
     .setDescription(`
 <a:hologram:990277266892263475> [Gizlilik Politikası için tıkla!](https://github.com/Chat-Guard/Chat-Guard/wiki/Gizlilik-Politikas%C4%B1)
-<a:hologram:990277266892263475> [Kullanım Koşulları için tıkla!](https://github.com/Chat-Guard/Chat-Guard/wiki/Kullan%C4%B1m-Ko%C5%9Fullar%C4%B1i)
+<a:hologram:990277266892263475> [Kullanım Koşulları için tıkla!](https://github.com/Chat-Guard/Chat-Guard/wiki/Kullan%C4%B1m-Ko%C5%9Fullar%C4%B1)
 `)]});
 };
     
