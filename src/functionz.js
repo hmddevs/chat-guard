@@ -13,8 +13,8 @@ async function Punish(message, GuardType, Embed) {
     const CanBeLog = LogChannel && LogChannel.type === ChannelType.GuildText
 
 
-    if (!CanBeMuted)  return message.channel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> UYARI - İşlem gerçekleşemedi. Sebep: "Üyelere Zamanaşımı Uygula" yetkisi bulunamadı.')]}).catch(() => {});
-    if(!CanBeLog) return message.channel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> UYARI - İşlem gerçekleşemedi. Sebep: "Log Kanalı" bulunamadı lütfen /logkanalı komutunu ayarlayın.')]}).catch(() => {});
+    if (!CanBeMuted)  return message.channel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> UYARI - İşlem gerçekleşemedi. Sebep: "Üyelere Zamanaşımı Uygula" yetkisi bulunamadı. Lütfen botun yetkilerini güncelleyin.')]}).catch(() => {});
+    if(!CanBeLog) return message.channel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> UYARI - İşlem gerçekleşemedi. Sebep: "Log Kanalı" bulunamadı lütfen /logkanalı komutu ile log kanalını ayarlayın.')]}).catch(() => {});
   
     if(Database.BlueListMembers.includes(message.member.id) === true) result = true;
    
@@ -22,7 +22,7 @@ async function Punish(message, GuardType, Embed) {
 
         await db.findOneAndUpdate({ ServerID: message.guild.id }, { $pull: { BlueListMembers: message.member.id }});
         await db.findOneAndUpdate({ ServerID: message.guild.id }, { $push: { BlackListMembers: message.member.id } }, { upsert: true });
-        await message.member.timeout(MuteSüresi * 1000 * 60, "Chat İhlali -ChatGuard").catch(() => {});
+        await message.member.timeout(MuteSüresi * 1000 * 60, "Chat İhlali - Chat Guard").catch(() => {});
         setTimeout(async() => await db.findOneAndUpdate({ ServerID: message.guild.id }, { $pull: { BlackListMembers: message.member.id }}), MuteSüresi * 1000 * 60 ); 
 
         if(GuardType === 'CharacterLimit') {
@@ -119,4 +119,4 @@ function reset () {
     };}
 
 
-module.exports = exports = { Spam, RandomColor, BadWord, WhiteList, Punish };   
+module.exports = exports = { Spam, RandomColor, BadWord, WhiteList, Punish };
