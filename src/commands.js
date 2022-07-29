@@ -30,7 +30,7 @@ if(interaction.commandName === 'davet') {
     .setTimestamp()
     .setDescription(`
 <a:hologram:990277266892263475> [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
-<a:hologram:990277266892263475> [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/bUHJbrDPmw)
+<a:hologram:990277266892263475> [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/b8e2EKJpry)
 <a:hologram:990277266892263475> [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
 `)]});
 };
@@ -43,7 +43,7 @@ if(interaction.commandName === 'oy') {
         .setTimestamp()
         .setDescription(`
 <a:hologram:990277266892263475> [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
-<a:hologram:990277266892263475> [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/bUHJbrDPmw)
+<a:hologram:990277266892263475> [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/b8e2EKJpry)
 <a:hologram:990277266892263475> [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
 `)]});
 };
@@ -169,19 +169,19 @@ if(interaction.commandName === 'yardım') {
 <a:100:990276334435586058> Sunucunun durumunu görmek için: \`/sunucudurumu\`
 
 <:space:990276555131465729> <a:settings:990276448185106512> **Ayarlamalar:**
-<:arrow:990277284281872424> Beyaz liste için: \`/beyazliste [ekle/kaldır] [Rol/Kanal/Üye](etiket/id)\`
+<:arrow:990277284281872424> Beyaz liste için: \`/beyazliste [ekle/kaldır] [Rol/kanal/üye](etiket/id)\`
 <:arrow:990277284281872424> Filtre için: \`/filtre [ekle/kaldır] [kelime]\`
-<:arrow:990277284281872424> Mute süresini ayarlamak için: \`/mutesüre 10 [Süreyi dakika cinsinden girin]\`
-<:arrow:990277284281872424> Log kanalını ayarlamak için: \`/logkanalı #kanal [etiket/id]\`
+<:arrow:990277284281872424> Mute süresini ayarlamak için: \`/mutesüre 10 [Süreyi dakika cinsinden girin] \`
+<:arrow:990277284281872424> Log kanalını ayarlamak için: \`/logkanalı #kanal [etiket/id\`
 
 <:space:990276555131465729> <a:settings:990276448185106512> **Korumalar:**
-<:arrow:990277284281872424> Ceza kaldırmak için: \`/cezakaldır @kullanıcı [etiket/id]\`  
-<:arrow:990277284281872424> Uzun yazı engel için: \`/karakterlimit [aç/kapat]\`
-<:arrow:990277284281872424> Sunucu davet linki engel: \`/davetkoruma [aç/kapat]\`
-<:arrow:990277284281872424> Link engel için: \`/linkkoruma [aç/kapat]\`
-<:arrow:990277284281872424> Çoklu etiket engel için: \`/çokluetiket [aç/kapat]\`
-<:arrow:990277284281872424> Küfür engel için: \`/küfürkoruma [aç/kapat]\`
-<:arrow:990277284281872424> Spam engel için: \`/spamkoruma [aç/kapat]\`
+<:arrow:990277284281872424> Ceza kaldırmak için: \`/cezakaldır @kullanıcı [etiket/id] \`  
+<:arrow:990277284281872424> Uzun yazı engel için: \`/karakterlimit [aç/kapat] \`
+<:arrow:990277284281872424> Sunucu davet linki engel: \`/davetkoruma [aç/kapat] \`
+<:arrow:990277284281872424> Link engel için: \`/linkkoruma [aç/kapat] \`
+<:arrow:990277284281872424> Çoklu etiket engel için: \`/çokluetiket [aç/kapat] \`
+<:arrow:990277284281872424> Küfür engel için: \`/küfürkoruma [aç/kapat] \`
+<:arrow:990277284281872424> Spam engel için: \`/spamkoruma [aç/kapat] \`
 
 <:space:990276555131465729> <a:settings:990276448185106512> **Bot Hakkında:**
 <a:hologram:990277266892263475> Botu sunucuna eklemek/davet etmek için \`/davet\` yazabilirsin.
@@ -192,7 +192,7 @@ if(interaction.commandName === 'yardım') {
 
 if(interaction.commandName === 'beyazliste') {
     if(config.BotOwners.includes(interaction.member.id) === false &&  !interaction.member.permissions.has(PermissionsBitField.Flags.Administrator)) return interaction.reply({ content: `<a:red:990277321414045767> Ayar komutlarını kullanabilmen için yönetici olman gerek.`, ephemeral: true });
-    const tercih = interaction.options?.getString('seçim'); 
+    const tercih = interaction.options?.getString('secim'); 
     const id = interaction.options?.getString('id');
 
     if(tercih === 'ekle' ) {
@@ -203,24 +203,24 @@ if(interaction.commandName === 'beyazliste') {
     
         if(member){   
             const Database = await db.findOne({ ServerID: interaction.guild.id });
-            if (Database && Database.WhiteListMembers.includes(member.user.id)) return interaction.reply({ embeds:[embed.setDescription('**<@'+member.user.id+'>**, Kullanıcı adlı üye zaten beyazliste\'de bulunmakta')]}).catch(() => {});
+            if (Database && Database.WhiteListMembers.includes(member.user.id)) return interaction.reply({ embeds:[embed.setDescription('**<@'+member.user.id+'>**, İsimli üye zaten beyazliste\'de bulunmakta')]}).catch(() => {});
     
             await db.findOneAndUpdate({ ServerID: interaction.guild.id }, { $push: { WhiteListMembers: member.user.id } }, { upsert: true });
-            return interaction.reply({ embeds:[embed.setDescription('<:check:990277303579836468> **<@'+member.user.id+'>**, Kullanıcı adlı üye başarıyla beyaliste\'ye eklendi')]});}
+            return interaction.reply({ embeds:[embed.setDescription('<:check:990277303579836468> **<@'+member.user.id+'>**, İsimli üye başarıyla beyaliste\'ye eklendi')]});}
   
         if(role) { 
             const Database = await db.findOne({ ServerID: interaction.guild.id });
-            if (Database && Database.WhiteListRoles.includes(role.id))  return interaction.reply({ embeds:[embed.setDescription('**<@&'+role.id+'>**, Kullanıcı adlı Rol zaten beyazliste\'de bulunmakta')]}).catch(() => {});
+            if (Database && Database.WhiteListRoles.includes(role.id))  return interaction.reply({ embeds:[embed.setDescription('**<@&'+role.id+'>**, İsimli Rol zaten beyazliste\'de bulunmakta')]}).catch(() => {});
       
             await db.findOneAndUpdate({ ServerID: interaction.guild.id }, { $push: { WhiteListRoles: role.id } }, { upsert: true });
-            return interaction.reply({ embeds:[embed.setDescription('<:check:990277303579836468> **<@&'+role.id+'>**, Kullanıcı adlı rol başarıyla beyaliste\'ye eklendi')]});}
+            return interaction.reply({ embeds:[embed.setDescription('<:check:990277303579836468> **<@&'+role.id+'>**, İsimli rol başarıyla beyaliste\'ye eklendi')]});}
   
         if(channel) { 
             const Database = await db.findOne({ ServerID: interaction.guild.id });
-            if (Database && Database.WhiteListChannels.includes(channel.id)) return interaction.reply({ embeds:[embed.setDescription('**<#'+channel.id+'>**, Kullanıcı adlı kanal zaten beyazliste\'de bulunmakta')]}).catch(() => {});
+            if (Database && Database.WhiteListChannels.includes(channel.id)) return interaction.reply({ embeds:[embed.setDescription('**<#'+channel.id+'>**, İsimli kanal zaten beyazliste\'de bulunmakta')]}).catch(() => {});
   
             await db.findOneAndUpdate({ ServerID: interaction.guild.id }, { $push: { WhiteListChannels: channel.id } }, { upsert: true });
-            return interaction.reply({ embeds:[embed.setDescription('<:check:990277303579836468> **<#'+channel.id+'>**, Kullanıcı adlı kanal başarıyla beyazliste\'ye eklendi')]}).catch(() => {});}
+            return interaction.reply({ embeds:[embed.setDescription('<:check:990277303579836468> **<#'+channel.id+'>**, İsimli kanal başarıyla beyazliste\'ye eklendi')]}).catch(() => {});}
     }
     if (tercih === 'kaldır' ) {
 
@@ -231,30 +231,30 @@ if(interaction.commandName === 'beyazliste') {
 
         if(member){   
             const Database = await db.findOne({ ServerID: interaction.guild.id });
-            if (!Database || !Database.WhiteListMembers.includes(member.user.id)) return interaction.reply({ embeds:[embed.setDescription('**<@'+member.user.id+'>**, Kullanıcı adlı üye zaten beyazliste\'de değil.')]}).catch(() => {});
+            if (!Database || !Database.WhiteListMembers.includes(member.user.id)) return interaction.reply({ embeds:[embed.setDescription('**<@'+member.user.id+'>**, İsimli üye zaten beyazliste\'de değil.')]}).catch(() => {});
    
             await db.findOneAndUpdate({ ServerID: interaction.guild.id }, { $pull: { WhiteListMembers: member.id } } );
-            return interaction.reply({ embeds:[embed.setDescription('<:check:990277303579836468> **<@'+member.user.id+'>**, Kullanıcı adlı üye başarıyla beyaliste\'den kaldırıldı.')]}).catch(() => {});}
+            return interaction.reply({ embeds:[embed.setDescription('<:check:990277303579836468> **<@'+member.user.id+'>**, İsimli üye başarıyla beyaliste\'den kaldırıldı.')]}).catch(() => {});}
  
         if(role) { 
             const Database = await db.findOne({ ServerID: interaction.guild.id });
-            if (!Database || !Database.WhiteListRoles.includes(role.id)) return interaction.reply({ embeds:[embed.setDescription('**<@&'+role.id+'>**, Kullanıcı adlı rol zaten beyazliste\'de değil.')]}).catch(() => {});
+            if (!Database || !Database.WhiteListRoles.includes(role.id)) return interaction.reply({ embeds:[embed.setDescription('**<@&'+role.id+'>**, İsimli rol zaten beyazliste\'de değil.')]}).catch(() => {});
      
             await db.findOneAndUpdate({ ServerID: interaction.guild.id }, { $pull: { WhiteListRoles: role.id } } );
-            return interaction.reply({ embeds:[embed.setDescription('<:check:990277303579836468> **<@&'+role.id+'>**, Kullanıcı adlı rol başarıyla beyaliste\'den kaldırıldı.')]});}
+            return interaction.reply({ embeds:[embed.setDescription('<:check:990277303579836468> **<@&'+role.id+'>**, İsimli rol başarıyla beyaliste\'den kaldırıldı.')]});}
  
         if(channel) { 
             const Database = await db.findOne({ ServerID: interaction.guild.id });
-            if (!Database || !Database.WhiteListChannels.includes(channel.id)) return interaction.reply({ embeds:[embed.setDescription('**<#'+channel.id+'>**, Kullanıcı adlı kanal zaten beyazliste\'de değil.')]});
+            if (!Database || !Database.WhiteListChannels.includes(channel.id)) return interaction.reply({ embeds:[embed.setDescription('**<#'+channel.id+'>**, İsimli kanal zaten beyazliste\'de değil.')]});
  
             await db.findOneAndUpdate({ ServerID: interaction.guild.id }, { $pull: { WhiteListChannels: channel.id }});
-            return interaction.reply({ embeds:[embed.setDescription('<:check:990277303579836468> **<#'+channel.id+'>**, Kullanıcı adlı kanal başarıyla beyaliste\'den kaldırıldı.')]}).catch(() => {});}
+            return interaction.reply({ embeds:[embed.setDescription('<:check:990277303579836468> **<#'+channel.id+'>**, İsimli kanal başarıyla beyaliste\'den kaldırıldı.')]}).catch(() => {});}
     };
 };
 
 if(interaction.commandName === 'filtre') {
     if(config.BotOwners.includes(interaction.member.id) === false &&  !interaction.member.permissions.has(PermissionsBitField.Flags.Administrator)) return interaction.reply({ content: `<a:red:990277321414045767> Ayar komutlarını kullanabilmen için yönetici olman gerek.`, ephemeral: true });
-    const tercih = interaction.options?.getString('seçim'); 
+    const tercih = interaction.options?.getString('secim'); 
     const word = interaction.options?.getString('word');
    
         if (tercih === 'ekle'  ) {
@@ -291,24 +291,24 @@ if(interaction.commandName === 'cezakaldır') {
     const member = interaction.options?.getMember('üye');
     if(!member) return interaction.reply({ embeds:[embed.setDescription('<a:red:990277321414045767> Örnek kullanım: **/cezakaldır @user/user id**')]}).catch(() => {});        
     const Database = await db.findOne({ ServerID: interaction.guild.id });
-    if(!Database) return  interaction.reply({ embeds:[embed.setDescription('**<@'+member.user.id+'>**, Kullanıcı adlı üye\'nin herhangi bir cezası bulunamadı.')]}).catch(() => {});
+    if(!Database) return  interaction.reply({ embeds:[embed.setDescription('**<@'+member.user.id+'>**, İsimli üye\'nin herhangi bir cezası bulunamadı.')]}).catch(() => {});
     
     if(Database.BlueListMembers.includes(member.user.id) === true) {
             await db.findOneAndUpdate({ ServerID: interaction.guild.id }, { $pull: { BlueListMembers: member.user.id } });
-            return  interaction.reply({ embeds:[embed.setDescription('<:check:990277303579836468> **<@'+member.user.id+'>**, Kullanıcı adlı üye\'nin uyarısı başarıyla kaldırıldı.')]}).catch(() => {});
+            return  interaction.reply({ embeds:[embed.setDescription('<:check:990277303579836468> **<@'+member.user.id+'>**, İsimli üye\'nin uyarısı başarıyla kaldırıldı.')]}).catch(() => {});
         }
         
         if(Database.BlackListMembers.includes(member.user.id) === true) {
             await db.findOneAndUpdate({ ServerID: interaction.guild.id }, { $pull: { BlackListMembers: member.user.id } });
-            member.timeout(1000 , "Ceza Kaldır Komutu Kullanıldı - ChatGuard").catch(() => {});
-            return interaction.reply({ embeds:[embed.setDescription('<:check:990277303579836468> **<@'+member.user.id+'>**, Kullanıcı adlı üye\'nin mutesi başarıyla kaldırıldı.')]}).catch(() => {});
+            await member.timeout(1000 , "Yetkili: "+interaction.member.user.tag+"").catch(() => {});
+            return interaction.reply({ embeds:[embed.setDescription('<:check:990277303579836468> **<@'+member.user.id+'>**, İsimli üye\'nin mutesi başarıyla kaldırıldı.')]}).catch(() => {});
         }
-        if(Database.BlueListMembers.includes(member.user.id) === false || Database.BlackListMembers.includes(member.user.id) === false) return  interaction.reply({ embeds:[embed.setDescription('**<@'+member.user.id+'>**, Kullanıcı adlı üye\'nin herhangi bir cezası bulunamadı.')]}).catch(() => {});
+        if(Database.BlueListMembers.includes(member.user.id) === false || Database.BlackListMembers.includes(member.user.id) === false) return  interaction.reply({ embeds:[embed.setDescription('**<@'+member.user.id+'>**, İsimli üye\'nin herhangi bir cezası bulunamadı.')]}).catch(() => {});
     }
 
     if(interaction.commandName === 'karakterlimit') {
         if(config.BotOwners.includes(interaction.member.id) === false &&  !interaction.member.permissions.has(PermissionsBitField.Flags.Administrator)) return interaction.reply({ content: `<a:red:990277321414045767> Ayar komutlarını kullanabilmen için yönetici olman gerek.`, ephemeral: true });
-        const tercih = interaction.options?.getString('seçim'); 
+        const tercih = interaction.options?.getString('secim'); 
     
             const Database = await db.findOne({ServerID: interaction.guild.id});
             if(tercih === 'aç') {
@@ -328,7 +328,7 @@ if(interaction.commandName === 'cezakaldır') {
 
         if(interaction.commandName === 'davetkoruma') {
             if(config.BotOwners.includes(interaction.member.id) === false &&  !interaction.member.permissions.has(PermissionsBitField.Flags.Administrator)) return interaction.reply({ content: `<a:red:990277321414045767> Ayar komutlarını kullanabilmen için yönetici olman gerek.`, ephemeral: true });
-            const tercih = interaction.options?.getString('seçim'); 
+            const tercih = interaction.options?.getString('secim'); 
         
                 const Database = await db.findOne({ServerID: interaction.guild.id});
                 if(tercih === 'aç') {
@@ -346,7 +346,7 @@ if(interaction.commandName === 'cezakaldır') {
             }
             if(interaction.commandName === 'linkkoruma') {
                 if(config.BotOwners.includes(interaction.member.id) === false &&  !interaction.member.permissions.has(PermissionsBitField.Flags.Administrator)) return interaction.reply({ content: `<a:red:990277321414045767> Ayar komutlarını kullanabilmen için yönetici olman gerek.`, ephemeral: true });
-                const tercih = interaction.options?.getString('seçim'); 
+                const tercih = interaction.options?.getString('secim'); 
             
                     const Database = await db.findOne({ServerID: interaction.guild.id});
                     if(tercih=== 'aç') {
@@ -367,7 +367,7 @@ if(interaction.commandName === 'cezakaldır') {
                 
     if(interaction.commandName === 'çokluetiket') {
         if(config.BotOwners.includes(interaction.member.id) === false &&  !interaction.member.permissions.has(PermissionsBitField.Flags.Administrator)) return interaction.reply({ content: `<a:red:990277321414045767> Ayar komutlarını kullanabilmen için yönetici olman gerek.`, ephemeral: true });
-        const tercih = interaction.options?.getString('seçim'); 
+        const tercih = interaction.options?.getString('secim'); 
 
     
             const Database = await db.findOne({ ServerID: interaction.guild.id });
@@ -388,7 +388,7 @@ if(interaction.commandName === 'cezakaldır') {
         if(interaction.commandName === 'küfürkoruma') {
         if(config.BotOwners.includes(interaction.member.id) === false &&  !interaction.member.permissions.has(PermissionsBitField.Flags.Administrator)) return interaction.reply({ content: `<a:red:990277321414045767> Ayar komutlarını kullanabilmen için yönetici olman gerek.`, ephemeral: true });
     
-        const tercih = interaction.options?.getString('seçim'); 
+        const tercih = interaction.options?.getString('secim'); 
 
     
             const Database = await db.findOne({ServerID: interaction.guild.id});
@@ -409,7 +409,7 @@ if(interaction.commandName === 'cezakaldır') {
         if(interaction.commandName === 'spamkoruma') {
         if(config.BotOwners.includes(interaction.member.id) === false &&  !interaction.member.permissions.has(PermissionsBitField.Flags.Administrator)) return interaction.reply({ content: `<a:red:990277321414045767> Ayar komutlarını kullanabilmen için yönetici olman gerek.`, ephemeral: true });
     
-        const tercih = interaction.options?.getString('seçim'); 
+        const tercih = interaction.options?.getString('secim'); 
 
     
             const Database = await db.findOne({ServerID: interaction.guild.id});
