@@ -70,7 +70,7 @@ if(interaction.commandName === 'komutlar') {
         .setColor("#5865F2")
         .setAuthor({ name: interaction.member.user.tag, iconURL: interaction.member.user.avatarURL({ dynamic: true })})
         .setTitle('<:rightside:804778651837005894> Chat Guard Komutları')
-        .setFooter({ text:`${interaction.member.user.tag} tarafından istendi.`}
+        .setFooter({ text:`${interaction.member.user.tag} tarafından istendi.`})
         .setTimestamp()
         .setDescription(`
 <a:100:990276334435586058> Yardım için \`/yardım\` yazabilirsin.
