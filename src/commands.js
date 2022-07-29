@@ -30,7 +30,7 @@ if(interaction.commandName === 'davet') {
     .setTimestamp()
     .setDescription(`
 <a:hologram:990277266892263475> [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
-<a:hologram:990277266892263475> [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/b8e2EKJpry)
+<a:hologram:990277266892263475> [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/bUHJbrDPmw)
 <a:hologram:990277266892263475> [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
 `)]});
 };
@@ -43,7 +43,7 @@ if(interaction.commandName === 'oy') {
         .setTimestamp()
         .setDescription(`
 <a:hologram:990277266892263475> [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
-<a:hologram:990277266892263475> [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/b8e2EKJpry)
+<a:hologram:990277266892263475> [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/bUHJbrDPmw)
 <a:hologram:990277266892263475> [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
 `)]});
 };
