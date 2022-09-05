@@ -34,6 +34,14 @@ commands.push({
     type:  ApplicationCommandType.ChatInput,
     options: null,
 });
+ 
+commands.push({
+    name: 'destek',
+    description: "Botun destek sunucusuna katılmanızı sağlar.",
+    type:  ApplicationCommandType.ChatInput,
+    options: null,
+});
+ 
 commands.push({
     name: 'cezakaldır',
     description: "Ceza alan üyenin cezasını kaldırmayı sağlar.",
