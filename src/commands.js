@@ -48,6 +48,19 @@ if(interaction.commandName === 'oy') {
 `)]});
 };
 
+if(interaction.commandName === 'destek') {
+    interaction.reply({ embeds: [new EmbedBuilder()
+        .setColor("#5865F2")
+        .setAuthor({ name: interaction.member.user.tag, iconURL: interaction.member.user.avatarURL({ dynamic: true })})
+        .setThumbnail(client.user.avatarURL())
+        .setTimestamp()
+        .setDescription(`
+<a:hologram:990277266892263475> [Botu sunucuna eklemek için tıkla!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
+<a:hologram:990277266892263475> [Destek sunucusuna katılmak için tıkla!](https://discord.com/invite/b8e2EKJpry)
+<a:hologram:990277266892263475> [Bota oy vererek destek olmak için tıkla!](https://top.gg/bot/870967982522777601/vote)
+`)]});
+};
+
 
 if(interaction.commandName  === 'info') {
  if(config.BotOwners.includes(interaction.member.id) === false ) return interaction.reply({ content: `<a:red:990277321414045767> Bu komut yalnızca geliştiricime özeldir.`, ephmeral: true });
