@@ -7,14 +7,14 @@ async function Punish(message, GuardType, Embed) {
     const Database = await db.findOne({ ServerID: message.guild.id });
     const LogChannel = message.guild.channels.cache.find(channel => channel.id === Database.PunishLogChannelID);
 
-    let MuteSüresi = Database.MuteDurationMinute;
-    if(Database.MuteDurationMinute < 1) MuteSüresi = 60;
+    let MuteDuration = Database.MuteDurationMinute;
+    if(Database.MuteDurationMinute < 1) MuteDuration = 60;
     const CanBeMuted = message.guild.members.cache.get(client.user.id).permissions.has(PermissionsBitField.Flags.ModerateMembers);
     const CanBeLog = LogChannel && LogChannel.type === ChannelType.GuildText
 
 
-    if (!CanBeMuted)  return message.channel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> UYARI - İşlem gerçekleşemedi. Sebep: "Üyelere Zamanaşımı Uygula" yetkisi bulunamadı. Lütfen botun yetkilerini güncelleyin.')]}).catch(() => {});
-    if(!CanBeLog) return message.channel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> UYARI - İşlem gerçekleşemedi. Sebep: "Log Kanalı" bulunamadı lütfen /logkanalı komutu ile log kanalını ayarlayın.')]}).catch(() => {});
+    if (!CanBeMuted)  return message.channel.send({ embeds: [Embed.setDescription('❌ WARNING - Operation failed. Reason: Missing Permisson. Please update the bots permissions.')]}).catch(() => {});
+    if(!CanBeLog) return message.channel.send({ embeds: [Embed.setDescription('❌ WARNING - Operation Failed. Reason: Missing Log Channel. Please set the log channel.')]}).catch(() => {});
   
     if(Database.BlueListMembers.includes(message.member.id) === true) result = true;
    
@@ -22,48 +22,47 @@ async function Punish(message, GuardType, Embed) {
 
         await db.findOneAndUpdate({ ServerID: message.guild.id }, { $pull: { BlueListMembers: message.member.id }});
         await db.findOneAndUpdate({ ServerID: message.guild.id }, { $push: { BlackListMembers: message.member.id } }, { upsert: true });
-        await message.member.timeout(MuteSüresi * 1000 * 60, "Chat İhlali - Chat Guard").catch(() => {});
-        setTimeout(async() => await db.findOneAndUpdate({ ServerID: message.guild.id }, { $pull: { BlackListMembers: message.member.id }}), MuteSüresi * 1000 * 60 ); 
+        await message.member.timeout(MuteDuration * 1000 * 60, "Chat Vialotion - Chat Guard").catch(() => {});
+        setTimeout(async() => await db.findOneAndUpdate({ ServerID: message.guild.id }, { $pull: { BlackListMembers: message.member.id }}), MuteDuration * 1000 * 60 ); 
 
         if(GuardType === 'CharacterLimit') {
-            message.channel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, Aşırı karakter kullandığın için **'+MuteSüresi+'** dakika susturuldun. Lütfen kurallara uymaya özen göster')]}).catch(() => {});
-            return LogChannel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, '+message.content.length+' uzunluğunda mesaj yazdığı için **'+MuteSüresi+'** dakika susturuldu.')]}).catch(() => {});
+            message.channel.send({ embeds: [Embed.setDescription('❌ <@'+message.author.id+'> have been muted for **'+MuteDuration+'** minutes due to using mass characters.')]}).catch(() => {});
+            return LogChannel.send({ embeds: [Embed.setDescription('❌ <@'+message.author.id+'>, was muted for **'+MuteDuration+'** minutes due to using '+message.content.length+' characters in a single message.')]}).catch(() => {});
         };
         if(GuardType === 'MassPingGuard') {
-            message.channel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, Aşırı etiket attığın için **'+MuteSüresi+'** dakika Susturuldun. Lütfen kurallara uymaya özen göster!')]}).catch(() => {});
-            return LogChannel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, mesajında **'+message.mentions.users.size+'** kişiyi etiketlediği için **'+MuteSüresi+'** dakika susturuldu.')]}).catch(() => {});
+            message.channel.send({ embeds: [Embed.setDescription('❌ <@'+message.author.id+'>, have been muted for **'+MuteDuration+'** minutes due to mass tagging.')]}).catch(() => {});
+            return LogChannel.send({ embeds: [Embed.setDescription('❌ <@'+message.author.id+'>, was muted for **'+MuteDuration+'** minutes for mentioning **'+message.mentions.users.size+'** user in their message.')]}).catch(() => {});
         };
         if(GuardType === 'InviteGuard') {
-            message.channel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, Sunucu daveti attığın için **'+MuteSüresi+'** dakika Susturuldun. Lütfen kurallara uymaya özen göster')]}).catch(() => {});
-            return LogChannel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, **'+message.content+'** içerikli mesajında sunucu daveti bulunduğu için **'+MuteSüresi+'** dakika susturuldu.')]}).catch(() => {});
-        };
+            message.channel.send({ embeds: [Embed.setDescription('❌ <@'+message.author.id+'> have been muted for **'+MuteDuration+'** minutes for sending a server invite.')]}).catch(() => {});
+            return LogChannel.send({ embeds: [Embed.setDescription('❌ <@'+message.author.id+'>, was muted for **'+MuteDuration+'** minutes for sending a server invite in their message: **'+message.content+'**.')]}).catch(() => {});
+        }
         if(GuardType === 'SpamGuard') {
-            message.channel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, **Spam** yaptığın için **'+MuteSüresi+'** dakika Susturuldun. Lütfen kurallara uymaya özen göster')]}).catch(() => {});
-            return LogChannel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, **Spam** yaptığı için **'+MuteSüresi+'** dakika susturuldu.')]}).catch(() => {});
-        };
+            message.channel.send({ embeds: [Embed.setDescription('❌ <@'+message.author.id+'> have been muted for **'+MuteDuration+'** minutes for **spamming**.')]}).catch(() => {});
+            return LogChannel.send({ embeds: [Embed.setDescription('❌ <@'+message.author.id+'>, was muted for **'+MuteDuration+'** minutes for **spamming**.')]}).catch(() => {});
+        }
     }
-    else if(result === false) {
-
+    else if (result === false) {
         await db.findOneAndUpdate({ ServerID: message.guild.id }, { $push: { BlueListMembers: message.member.id } }, { upsert: true });
-        setTimeout(async() => await db.findOneAndUpdate({ ServerID: message.guild.id }, { $pull: { BlueListMembers: message.member.id } }), 7200000); 
-
-        if(GuardType === 'CharacterLimit') {
-            message.channel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, **Aşırı karakter** kullanman yasak, tekrarı durumunda ceza alacaksın!')]}).catch(() => {});
-            return LogChannel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, **'+message.content.length+'** uzunluğunda mesaj yazdığı için uyarı aldı.')]}).catch(() => {});
-        };
-        if(GuardType === 'MassPingGuard') {
-            message.channel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, **Aşırı etiket** atman yasak, tekrarı durumunda ceza alacaksın!')]}).catch(() => {});
-            return LogChannel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, mesajında **'+message.mentions.users.size+'** kişiyi etiketlediği için uyarı aldı.')]}).catch(() => {});
-        };
-        if(GuardType === 'InviteGuard') {
-            message.channel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, **Sunucu Daveti** atman yasak, tekrarı durumunda ceza alacaksın!')]}).catch(() => {});
-            return LogChannel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, **'+message.content+'** içerikli mesajında **sunucu daveti** bulunduğu için uyarı aldı.')]}).catch(() => {});
-        };
-        if(GuardType === 'SpamGuard') {
-            message.channel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, **Spam** yapman yasak, tekrarı durumunda ceza alacaksın!')]}).catch(() => {});
-            return LogChannel.send({ embeds: [Embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, **Spam** yaptığı için uyarı aldı.')]}).catch(() => {});
-        };
-    };
+        setTimeout(async () => await db.findOneAndUpdate({ ServerID: message.guild.id }, { $pull: { BlueListMembers: message.member.id } }), 7200000);
+    
+        if (GuardType === 'CharacterLimit') {
+            message.channel.send({ embeds: [Embed.setDescription('❌ <@'+message.author.id+'>, Using **mass characters** is prohibited, you will be muted if it happens again!')]}).catch(() => {});
+            return LogChannel.send({ embeds: [Embed.setDescription('❌ <@'+message.author.id+'>, received a warning for sending a message with **'+message.content.length+'** characters.')]}).catch(() => {});
+        }
+        if (GuardType === 'MassPingGuard') {
+            message.channel.send({ embeds: [Embed.setDescription('❌ <@'+message.author.id+'>, **Mass tagging** is prohibited, you will be muted if it happens again!')]}).catch(() => {});
+            return LogChannel.send({ embeds: [Embed.setDescription('❌ <@'+message.author.id+'>, received a warning for tagging **'+message.mentions.users.size+'** user in their message.')]}).catch(() => {});
+        }
+        if (GuardType === 'InviteGuard') {
+            message.channel.send({ embeds: [Embed.setDescription('❌ <@'+message.author.id+'>, Sending **server invites** is prohibited, you will be muted if it happens again!')]}).catch(() => {});
+            return LogChannel.send({ embeds: [Embed.setDescription('❌ <@'+message.author.id+'>, received a warning for sending a **server invite** in their message: **'+message.content+'**.')]}).catch(() => {});
+        }
+        if (GuardType === 'SpamGuard') {
+            message.channel.send({ embeds: [Embed.setDescription('❌ <@'+message.author.id+'>, **Spamming** is prohibited, you will be muted if it happens again!')]}).catch(() => {});
+            return LogChannel.send({ embeds: [Embed.setDescription('❌ <@'+message.author.id+'>, received a warning for **spamming**.')]}).catch(() => {});
+        }
+    }
     return result;
 };
   

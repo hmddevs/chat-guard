@@ -2,14 +2,21 @@
   "name": "chat-guard",
   "author": "Heimdall",
   "version": "1.3.3-7",
-  "description": "Discord sunucuları için chat koruma botu",
+  "description": "Chat Guard is a Discord bot that helps manage and moderate chat channels by providing various features such as message filtering, user management, and more.",
+  "keywords": [
+    "discord",
+    "bot",
+    "moderation",
+    "chat",
+    "management"
+  ],
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^14.0.3",
+    "discord.js": "^14.19.3",
     "moment": "^2.29.1",
     "moment-duration-format": "^2.3.2",
     "mongoose": "^6.4.6"

@@ -40,19 +40,19 @@ client.on('messageCreate', async (message) => {
     if (LinkGuardReg.test(message.content)){
         if(Database.LinkGuard === false || Database.LinkGuard === null || !Database.LinkGuard) return;
         if (message && message.deletable) message.delete().catch(() => {});
-        return message.channel.send({ embeds: [embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, Link içeren mesajlar kullanman yasak!')]})
+        return message.channel.send({ embeds: [embed.setDescription('❌ <@'+message.author.id+'>, You are not allowed to use messages containing links!')]})
         .then(x => setTimeout(() => x.delete().catch(() => {}), 5000)).catch(() => {});
     }
     if(BadWord(message.content) === true) { 
         if(Database.BadWordGuard === false || Database.BadWordGuard === null || !Database.BadWordGuard) return;
         if (message && message.deletable) message.delete().catch(() => {});
-        return message.channel.send({ embeds: [embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, Küfür içeren mesajlar kullanman yasak!')]})
+        return message.channel.send({ embeds: [embed.setDescription('❌ <@'+message.author.id+'>, You are not allowed to use messages containing bad words!')]})
         .then(x => setTimeout(() => x.delete().catch(() => {}), 5000)).catch(() => {});
 
     }
     if (Database && Database.FiltredWords.some(Word => ` ${message.content.toLowerCase()} `.includes(` ${Word} `)) === true) {
      if (message && message.deletable) message.delete().catch(() => {});
-     return message.channel.send({ embeds: [embed.setDescription('<a:red:990277321414045767> <@'+message.author.id+'>, Filtrelenmiş kelime içeren mesajlar kullanman yasak!')]})
+     return message.channel.send({ embeds: [embed.setDescription('❌ <@'+message.author.id+'>, You are not allowed to use messages containing filtered words!')]})
      .then(x => setTimeout(() => x.delete().catch(() => {}), 5000)).catch(() => {});
     }
 });
@@ -82,25 +82,25 @@ client.on('messageUpdate', async (oldMessage, newMessage) => {
      if (/(http[s]?:\/\/)(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&/=]*)/gi.test(newMessage.content)){
          if(Database.LinkGuard === false || Database.LinkGuard === null || !Database.LinkGuard) return;
          if (newMessage && newMessage.deletable) newMessage.delete().catch(() => {});
-         return newMessage.channel.send({ embeds: [embed.setDescription('<a:red:990277321414045767> <@'+newMessage.author.id+'>, Link içeren mesajlar kullanman yasak!')] })
+         return newMessage.channel.send({ embeds: [embed.setDescription('❌ <@'+newMessage.author.id+'>, You are not allowed to use messages containing links!')] })
          .then(x => setTimeout(() => x.delete().catch(() => {}), 5000)).catch(() => {});
      }
      if(BadWord(newMessage.content) === true) { 
          if(Database.BadWordGuard === false || Database.BadWordGuard === null || !Database.BadWordGuard) return;
          if (newMessage && newMessage.deletable) newMessage.delete().catch(() => {});
-         return newMessage.channel.send({ embeds: [embed.setDescription('<a:red:990277321414045767> <@'+newMessage.author.id+'>, Küfür içeren mesajlar kullanman yasak!')] })
+         return newMessage.channel.send({ embeds: [embed.setDescription('❌ <@'+newMessage.author.id+'>, You are not allowed to use messages containing bad words!')] })
          .then(x => setTimeout(() => x.delete().catch(() => {}), 5000)).catch(() => {});
      }
     
    if(Database && Database.FiltredWords.some(Word => ` ${newMessage.content.toLowerCase()} `.includes(` ${Word} `)) === true) {
     if(newMessage && newMessage.deletable) newMessage.delete().catch(() => {});
-    return newMessage.channel.send({ embeds: [embed.setDescription('<a:red:990277321414045767> <@'+newMessage.author.id+'>, Filtrelenmiş kelime içeren mesajlar kullanman yasak!')] })
+    return newMessage.channel.send({ embeds: [embed.setDescription('❌ <@'+newMessage.author.id+'>, You are not allowed to use messages containing filtered words!')] })
     .then(x => setTimeout(() => x.delete().catch(() => {}), 5000)).catch(() => {});
     }
  });
  
-client.on('disconnect', () => console.log('bot kapanıyor'));
-client.on('reconnecting', () => console.log('bot tekrar bağlanıyor'));
+client.on('disconnect', () => console.log('Connection to Discord API has been lost.'));
+client.on('reconnecting', () => console.log('Reconnecting to Discord API...'));
 client.on('error', (error) => console.log(error));
 client.on('warn', (warn) => console.log(warn));
 process.on('unhandledRejection', (error) => console.log(error));
