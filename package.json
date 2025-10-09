@@ -14,7 +14,15 @@
   "scripts": {
     "start": "node app.js"
   },
-  "license": "ISC",
+  "license": "CC-BY-NC-SA-4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ichbinheimdall/chat-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ichbinheimdall/chat-guard/issues"
+  },
+  "homepage": "https://github.com/ichbinheimdall/chat-guard#readme",
   "dependencies": {
     "discord.js": "^14.19.3",
     "moment": "^2.29.1",
