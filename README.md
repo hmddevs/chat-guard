@@ -148,3 +148,5 @@ For help or questions, open an issue or contact the developer at [info@hmddevs.o
 - [moment-duration-format](https://github.com/jsmreese/moment-duration-format)
 
 Special thanks to the open-source community and all contributors.
+
+This project is based on work by [Klanter](https://github.com/klanter1337/Chat-Guard).
