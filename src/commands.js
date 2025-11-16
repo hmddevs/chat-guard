@@ -36,9 +36,9 @@ if (interaction.commandName === 'commands') {
 → For spam block: \`/spamblock [enable/disable]\`
 
 🕸️ ⚙️ **About the Bot:**
-🌹 To add/invite the bot to your server: \`/invite\`.
-🌹 To join the support server: \`/support\`.
-🌹 To vote for the bot on top.gg and show support: \`/vote\`.
+🌹 Open-source moderation bot by HMD Developments, Inc.
+🌹 Documentation: https://ichbinheimdall.github.io/chat-guard/
+🌹 Repository: https://github.com/ichbinheimdall/chat-guard
 `)],
         ephemeral: true
     }).catch(() => {});
@@ -62,9 +62,10 @@ if (interaction.commandName === 'invite') {
             .setThumbnail(client.user.avatarURL())
             .setTimestamp()
             .setDescription(`
-🌹 [Click to add the bot to your server!](https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands)
-🌹 [Click to join the support server!](https://discord.com/invite/b8e2EKJpry)
-🌹 [Click to vote for the bot and show support!](https://top.gg/bot/870967982522777601/vote)
+🌹 **Chat Guard** is open-source moderation software for Discord.
+🌹 [View Documentation](https://ichbinheimdall.github.io/chat-guard/)
+🌹 [GitHub Repository](https://github.com/ichbinheimdall/chat-guard)
+🌹 [Report Issues](https://github.com/ichbinheimdall/chat-guard/issues)
 `)]
     });
 };
@@ -118,9 +119,7 @@ if (interaction.commandName === 'settings') {
 → **Log Channel**: ${Database.PunishLogChannelID ? `<#${Database.PunishLogChannelID}>` : 'Log channel not set.'}
 
 🌹 To see commands and their usage, type \`/commands\`.
-🌹 To add/invite the bot to your server, type \`/invite\`.
-🌹 To join the support server, type \`/support\`.
-🌹 To vote for the bot on top.gg and show support, type \`/vote\`.
+🌹 Documentation: https://ichbinheimdall.github.io/chat-guard/
 `)]
         }).catch(() => {});
     }
@@ -147,9 +146,7 @@ if (interaction.commandName === 'settings') {
 → Whitelisted channels: **No channels in the whitelist.**
 
 🌹 To see commands and their usage, type \`/commands\`.
-🌹 To add/invite the bot to your server, type \`/invite\`.
-🌹 To join the support server, type \`/support\`.
-🌹 To vote for the bot on top.gg and show support, type \`/vote\`.
+🌹 Documentation: https://ichbinheimdall.github.io/chat-guard/
 `)]
         });
     }

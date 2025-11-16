@@ -2,10 +2,8 @@
 <p align="center">
   <img alt="Chat Guard" src="docs/assets/logo.svg" height="76" />
   <br/>
-  <a href="https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands"><img alt="Invite Bot" src="https://img.shields.io/badge/Invite%20the%20Bot-5865F2?style=for-the-badge&logo=discord&logoColor=white" /></a>
   <a href="https://ichbinheimdall.github.io/chat-guard/"><img alt="Docs" src="https://img.shields.io/badge/Read%20the%20Docs-0b5fff?style=for-the-badge" /></a>
-  <a href="https://discord.com/invite/b8e2EKJpry"><img alt="Support" src="https://img.shields.io/badge/Support%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white" /></a>
-  <a href="https://top.gg/bot/870967982522777601/vote"><img alt="Vote" src="https://img.shields.io/badge/Vote%20on%20top.gg-ff3366?style=for-the-badge" /></a>
+  <a href="https://github.com/ichbinheimdall/chat-guard"><img alt="GitHub" src="https://img.shields.io/badge/View%20on%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
   <br/>
   <a href="https://github.com/ichbinheimdall/chat-guard/actions/workflows/docs.yml"><img alt="Docs CI" src="https://github.com/ichbinheimdall/chat-guard/actions/workflows/docs.yml/badge.svg" /></a>
   <a href="./LICENSE"><img alt="License" src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey" /></a>
@@ -55,11 +53,19 @@ npm start
 - Full Docs: https://ichbinheimdall.github.io/chat-guard/
 - Quick Links: [Getting Started](docs/02-Getting-Started.md) · [Commands](docs/05-Commands.md) · [Deployment](docs/08-Deployment.md)
 
-## Get Chat Guard
+## Get Started
 
-- Invite the bot: https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands
-- Join support server: https://discord.com/invite/b8e2EKJpry
-- Vote on top.gg: https://top.gg/bot/870967982522777601/vote
+Chat Guard is open-source and designed for self-hosting. Clone the repository, configure your environment, and deploy your own instance:
+
+```bash
+git clone https://github.com/ichbinheimdall/chat-guard.git
+cd chat-guard
+npm install
+# Configure src/config.js with your bot token and MongoDB URL
+npm start
+```
+
+See [Getting Started](docs/02-Getting-Started.md) and [Deployment](docs/08-Deployment.md) for detailed instructions.
 
 ## Security & Privacy
 

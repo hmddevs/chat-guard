@@ -32,7 +32,7 @@ commands.push({
 // invite command
 commands.push({
     name: 'invite',
-    description: "Shows the bot's invite/support/vote link.",
+    description: "Shows the bot's repository and documentation links.",
     type:  ApplicationCommandType.ChatInput,
     options: null,
 });
