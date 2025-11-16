@@ -4,6 +4,12 @@
 
 Explore Chat Guard’s capabilities and get up and running quickly. Start with the Overview, then follow Getting Started to deploy your first instance. For production adoption, see Deployment and Operations.
 
+## Quick Links
+
+- Invite the bot: https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands
+- Support server: https://discord.com/invite/b8e2EKJpry
+- Vote on top.gg: https://top.gg/bot/870967982522777601/vote
+
 ## Table of Contents
 
 1. [Overview](01-Overview.md) — Vision, value, and capabilities
