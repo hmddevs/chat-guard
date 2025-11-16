@@ -62,3 +62,5 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ichbinheimdall/chat-guard
+  generator: false
+copyright: Copyright &copy; 2024-2025 HMD Developments, Inc. All rights reserved.
