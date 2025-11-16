@@ -46,3 +46,5 @@ This document explains Chat Guard’s design and request flow.
 - Add new guard checks in `events.js` with minimal coupling.
 - Extend schema in `db.js` for new toggles/thresholds.
 - Keep command options in `login.js` synchronized with handlers in `commands.js`.
+
+[Back to Docs Index](README.md) · [Next: Commands →](05-Commands.md) · [See also: Data Model](06-Data-Model.md)

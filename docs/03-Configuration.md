@@ -20,7 +20,7 @@ module.exports = {
 
 ## Server Policy (stored in MongoDB)
 
-Chat Guard persists per‑server configuration and state in the `ChatGuard` collection. See Data Model for full schema. Key toggles:
+Chat Guard persists per‑server configuration and state in the `ChatGuard` collection. See [Data Model](06-Data-Model.md) for full schema. Key toggles:
 
 - `CharacterLimit` (boolean) — Enforces 500‑character limit
 - `InviteGuard` (boolean) — Blocks Discord invites from non‑whitelisted sources
@@ -57,3 +57,5 @@ The bot currently sets `moment` locale to `tr` for time formatting. If you need 
 ## Secrets Management
 
 Do not commit tokens or connection strings. Use environment managers (e.g., Heroku config vars, GitHub Actions secrets) and inject into `src/config.js` during deployment, or refactor to load from environment variables.
+
+[Back to Docs Index](README.md) · [Next: Architecture →](04-Architecture.md) · [See also: Commands](05-Commands.md)

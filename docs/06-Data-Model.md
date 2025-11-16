@@ -40,3 +40,5 @@ Chat Guard persists per‑server configuration and enforcement state in MongoDB 
 ## Indexing (Optional)
 
 For large deployments, consider indexes on `{ ServerID: 1 }`.
+
+[Back to Docs Index](README.md) · [See also: Configuration](03-Configuration.md) · [See also: Architecture](04-Architecture.md)

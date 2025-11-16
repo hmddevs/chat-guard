@@ -64,3 +64,5 @@ Provide env vars in `.env` or bake a config loader to read from env.
 
 - Forward stdout/stderr to your platform logs.
 - Configure a dedicated moderation log channel in Discord for auditability.
+
+[Back to Docs Index](README.md) · [Next: Operations →](09-Operations.md) · [See also: Getting Started](02-Getting-Started.md)

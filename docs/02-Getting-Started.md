@@ -54,4 +54,6 @@ Use the slash command `/invite` in any server where the bot is present. You can 
 - Enable protections as needed: e.g., `/inviteblock enable`, `/spamblock enable`
 - Adjust mute duration: `/muteduration 60`
 
-For deeper configuration details, see 03-Configuration.md. For operations, see 09-Operations.md.
+For deeper configuration details, see [Configuration](03-Configuration.md). For operations, see [Operations & Monitoring](09-Operations.md).
+
+[Back to Docs Index](README.md) · [Next: Configuration →](03-Configuration.md)

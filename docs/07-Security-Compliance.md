@@ -23,7 +23,7 @@ Grant the smallest practical set of permissions for your policy.
 - Stored data: Guild (Server) IDs, whitelists, filtered words, log channel ID, temporary enforcement lists.
 - No storage of message content beyond embedded summaries in log messages, where configured by policy.
 - Direct messages to the bot are not stored.
-- Data deletion requests: contact legal@hmddevs.org with proof of control.
+- Data deletion requests: contact legal@hmddevs.org with proof of control. See [Privacy Policy](Privacy-Policy.md) and [Terms of Use](Terms-of-Use.md).
 
 ## Compliance Guidance
 
@@ -36,3 +36,5 @@ Grant the smallest practical set of permissions for your policy.
 - Protect tokens and DB credentials; use environment secrets.
 - Restrict who can run settings commands to Administrators.
 - Monitor for repeated failed operations; review bot permissions if warnings appear.
+
+[Back to Docs Index](README.md)

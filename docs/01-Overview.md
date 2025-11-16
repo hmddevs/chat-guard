@@ -33,4 +33,6 @@ Chat Guard is a configurable Discord moderation bot engineered by HMD Developmen
 - Developers and platform engineers requiring a secure, configurable base bot
 - Enterprises seeking a non‑commercial, auditable moderation utility
 
-For a guided setup, see 02-Getting-Started.md. For design details, see 04-Architecture.md.
+For a guided setup, see [Getting Started](02-Getting-Started.md). For design details, see [Architecture](04-Architecture.md).
+
+[Back to Docs Index](README.md) · [Next: Getting Started →](02-Getting-Started.md)

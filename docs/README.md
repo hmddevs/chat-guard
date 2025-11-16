@@ -6,30 +6,20 @@ If you are new to the project, start with the Overview and Getting Started. For 
 
 ## Table of Contents
 
-1. Overview — Vision, value, and capabilities
-   - See: 01-Overview.md
-2. Getting Started — Quick start and environment setup
-   - See: 02-Getting-Started.md
-3. Configuration — All configurable settings and best practices
-   - See: 03-Configuration.md
-4. Architecture — Components, flows, and design decisions
-   - See: 04-Architecture.md
-5. Commands & Usage — Slash commands, permissions, examples
-   - See: 05-Commands.md
-6. Data Model — Schema, retention, and access patterns
-   - See: 06-Data-Model.md
-7. Security & Compliance — Permissions, privacy, and controls
-   - See: 07-Security-Compliance.md
-8. Deployment — Local, cloud, and Heroku options
-   - See: 08-Deployment.md
-9. Operations & Monitoring — Logging, health, troubleshooting
-   - See: 09-Operations.md
-10. FAQ — Common questions and guidance
-   - See: 10-FAQ.md
+1. [Overview](01-Overview.md) — Vision, value, and capabilities
+2. [Getting Started](02-Getting-Started.md) — Quick start and environment setup
+3. [Configuration](03-Configuration.md) — All configurable settings and best practices
+4. [Architecture](04-Architecture.md) — Components, flows, and design decisions
+5. [Commands & Usage](05-Commands.md) — Slash commands, permissions, examples
+6. [Data Model](06-Data-Model.md) — Schema, retention, and access patterns
+7. [Security & Compliance](07-Security-Compliance.md) — Permissions, privacy, and controls
+8. [Deployment](08-Deployment.md) — Local, cloud, and Heroku options
+9. [Operations & Monitoring](09-Operations.md) — Logging, health, troubleshooting
+10. [FAQ](10-FAQ.md) — Common questions and guidance
 
 Appendices:
-- Privacy Policy — See: Privacy-Policy.md
-- Terms of Use — See: Terms-of-Use.md
+- [Privacy Policy](Privacy-Policy.md)
+- [Terms of Use](Terms-of-Use.md)
 
 ---
 

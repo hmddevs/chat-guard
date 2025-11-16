@@ -18,6 +18,14 @@
 
 Configurable Discord moderation by HMD Developments, Inc. Automate message filtering, spam/invite/link blocking, mute escalation, and transparent logging — so your community stays safe and organized.
 
+## Why Chat Guard
+
+- Business‑grade moderation: enforce clear rules consistently and reduce manual workload.
+- Proven protections: anti‑spam, mass‑mention controls, link/invite filtering, and word/term filtering.
+- Transparent governance: dedicated moderation logs and auditable actions.
+- Configurable by design: tune protections, mute durations, and whitelists to your community.
+- Enterprise‑friendly: clear Privacy & Terms, Security guidance, and full docs.
+
 ## Highlights
 
 - Automated filtering: bad words, custom terms, links, and invites
@@ -25,6 +33,12 @@ Configurable Discord moderation by HMD Developments, Inc. Automate message filte
 - Warning → mute escalation with configurable durations
 - Whitelist by member, role, or channel
 - Dedicated moderation logs
+
+## Who It’s For
+
+- Community owners who need reliable and safe automation
+- Moderators seeking consistent enforcement with minimal friction
+- Developers who want a secure, configurable foundation
 
 ## Quick Start
 
@@ -38,17 +52,23 @@ npm start
 
 ## Documentation
 
-- Getting Started: docs/02-Getting-Started.md
-- Configuration: docs/03-Configuration.md
-- Architecture: docs/04-Architecture.md
-- Commands & Usage: docs/05-Commands.md
-- Data Model: docs/06-Data-Model.md
-- Security & Compliance: docs/07-Security-Compliance.md
-- Deployment: docs/08-Deployment.md
-- Operations: docs/09-Operations.md
-- FAQ: docs/10-FAQ.md
-- Privacy Policy: docs/Privacy-Policy.md
-- Terms of Use: docs/Terms-of-Use.md
+- [Getting Started](docs/02-Getting-Started.md)
+- [Configuration](docs/03-Configuration.md)
+- [Architecture](docs/04-Architecture.md)
+- [Commands & Usage](docs/05-Commands.md)
+- [Data Model](docs/06-Data-Model.md)
+- [Security & Compliance](docs/07-Security-Compliance.md)
+- [Deployment](docs/08-Deployment.md)
+- [Operations](docs/09-Operations.md)
+- [FAQ](docs/10-FAQ.md)
+- [Privacy Policy](docs/Privacy-Policy.md)
+- [Terms of Use](docs/Terms-of-Use.md)
+
+## Get Chat Guard
+
+- Invite the bot: https://discord.com/oauth2/authorize?client_id=870967982522777601&permissions=8&scope=bot%20applications.commands
+- Join support server: https://discord.com/invite/b8e2EKJpry
+- Vote on top.gg: https://top.gg/bot/870967982522777601/vote
 
 Docs website (optional): will publish to GitHub Pages via the provided workflow once Pages is enabled.
 

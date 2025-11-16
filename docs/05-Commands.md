@@ -40,3 +40,5 @@ This reference lists all slash commands, parameters, required permissions, and e
 Notes:
 - Whitelist accepts IDs of users, roles, or channels. Obtain IDs from Discord developer mode.
 - Log channel must be a text channel where the bot can send messages.
+
+[Back to Docs Index](README.md) · [See also: Configuration](03-Configuration.md)
