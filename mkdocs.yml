@@ -58,7 +58,6 @@ extra_css:
   - extra.css
 plugins:
   - search
-  - sitemap
 extra:
   social:
     - icon: fontawesome/brands/github
