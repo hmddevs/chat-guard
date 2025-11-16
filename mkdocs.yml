@@ -4,19 +4,19 @@ site_url: https://ichbinheimdall.github.io/chat-guard/
 repo_url: https://github.com/ichbinheimdall/chat-guard
 repo_name: ichbinheimdall/chat-guard
 nav:
-  - Home: docs/README.md
-  - Overview: docs/01-Overview.md
-  - Getting Started: docs/02-Getting-Started.md
-  - Configuration: docs/03-Configuration.md
-  - Architecture: docs/04-Architecture.md
-  - Commands: docs/05-Commands.md
-  - Data Model: docs/06-Data-Model.md
-  - Security & Compliance: docs/07-Security-Compliance.md
-  - Deployment: docs/08-Deployment.md
-  - Operations: docs/09-Operations.md
-  - FAQ: docs/10-FAQ.md
-  - Privacy Policy: docs/Privacy-Policy.md
-  - Terms of Use: docs/Terms-of-Use.md
+  - Home: README.md
+  - Overview: 01-Overview.md
+  - Getting Started: 02-Getting-Started.md
+  - Configuration: 03-Configuration.md
+  - Architecture: 04-Architecture.md
+  - Commands: 05-Commands.md
+  - Data Model: 06-Data-Model.md
+  - Security & Compliance: 07-Security-Compliance.md
+  - Deployment: 08-Deployment.md
+  - Operations: 09-Operations.md
+  - FAQ: 10-FAQ.md
+  - Privacy Policy: Privacy-Policy.md
+  - Terms of Use: Terms-of-Use.md
 theme:
   name: mkdocs
 markdown_extensions:
