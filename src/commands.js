@@ -50,8 +50,8 @@ if(interaction.commandName === 'privacy') {
     .setThumbnail(client.user.avatarURL())
     .setTimestamp()
     .setDescription(`
-🌹 [Click for Privacy Policy!](https://github.com/Chat-Guard/Chat-Guard/wiki/Privacy-Policy)  
-🌹 [Click for Terms of Use!](https://github.com/Chat-Guard/Chat-Guard/wiki/Terms-of-Use)
+🌹 [Click for Privacy Policy!](https://github.com/ichbinheimdall/chat-guard/blob/main/docs/Privacy-Policy.md)  
+🌹 [Click for Terms of Use!](https://github.com/ichbinheimdall/chat-guard/blob/main/docs/Terms-of-Use.md)
 `)]});
 }; 
 if (interaction.commandName === 'invite') {

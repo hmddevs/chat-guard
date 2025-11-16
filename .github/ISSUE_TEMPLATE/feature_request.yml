@@ -1,0 +1,26 @@
+name: Feature request
+description: Suggest an idea or enhancement
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Chat Guard!
+  - type: input
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What problem does this feature address?
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the feature, UX, and configuration surface
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context

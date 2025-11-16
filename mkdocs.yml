@@ -1,0 +1,29 @@
+site_name: Chat Guard Documentation
+site_description: Comprehensive documentation for Chat Guard by HMD Developments, Inc.
+site_url: https://ichbinheimdall.github.io/chat-guard/
+repo_url: https://github.com/ichbinheimdall/chat-guard
+repo_name: ichbinheimdall/chat-guard
+nav:
+  - Home: docs/README.md
+  - Overview: docs/01-Overview.md
+  - Getting Started: docs/02-Getting-Started.md
+  - Configuration: docs/03-Configuration.md
+  - Architecture: docs/04-Architecture.md
+  - Commands: docs/05-Commands.md
+  - Data Model: docs/06-Data-Model.md
+  - Security & Compliance: docs/07-Security-Compliance.md
+  - Deployment: docs/08-Deployment.md
+  - Operations: docs/09-Operations.md
+  - FAQ: docs/10-FAQ.md
+  - Privacy Policy: docs/Privacy-Policy.md
+  - Terms of Use: docs/Terms-of-Use.md
+theme:
+  name: mkdocs
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ichbinheimdall/chat-guard

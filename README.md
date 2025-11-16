@@ -1,152 +1,63 @@
 
+<p align="center">
+  <img alt="Chat Guard" src="https://img.shields.io/badge/Chat%20Guard-Moderation%20Bot-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
+  <br/>
+  <a href="https://github.com/ichbinheimdall/chat-guard/actions/workflows/docs.yml">
+    <img alt="Docs" src="https://github.com/ichbinheimdall/chat-guard/actions/workflows/docs.yml/badge.svg" />
+  </a>
+  <a href="./LICENSE">
+    <img alt="License" src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey" />
+  </a>
+  <a href="https://nodejs.org/">
+    <img alt="Node" src="https://img.shields.io/badge/Node-%3E%3D16.9.0-339933" />
+  </a>
+  
+</p>
+
 # Chat Guard
 
-## Overview
+Configurable Discord moderation by HMD Developments, Inc. Automate message filtering, spam/invite/link blocking, mute escalation, and transparent logging — so your community stays safe and organized.
 
-**Chat Guard** is a powerful Discord moderation bot designed to help server administrators maintain a safe, organized, and respectful community. It provides advanced message filtering, user management, anti-spam, and customizable moderation tools, all easily configurable for your server’s needs.
+## Highlights
 
----
+- Automated filtering: bad words, custom terms, links, and invites
+- Anti‑spam and mass‑mention protection
+- Warning → mute escalation with configurable durations
+- Whitelist by member, role, or channel
+- Dedicated moderation logs
 
-## Features
+## Quick Start
 
-- **Automated Message Filtering**: Block prohibited words, links, Discord invites, and custom terms.
-- **Spam & Flood Protection**: Detect and neutralize spam and mass mentions.
-- **Invite & Link Blocking**: Prevent sharing of Discord invites and external links.
-- **Character Limit Enforcement**: Set maximum message length to keep chats concise.
-- **Mute Management**: Temporarily mute users who break rules, with custom durations.
-- **Whitelist System**: Exempt trusted users, roles, or channels from moderation.
-- **Customizable Settings**: Adjust filters, mute durations, logging, and more.
-- **Comprehensive Command Set**: Intuitive commands for all bot features.
-- **Logging**: Record moderation actions for transparency.
+```bash
+git clone https://github.com/ichbinheimdall/chat-guard.git
+cd chat-guard
+npm install
+# edit src/config.js with your token & MongoDB URL
+npm start
+```
 
----
+## Documentation
 
-## Architecture
+- Getting Started: docs/02-Getting-Started.md
+- Configuration: docs/03-Configuration.md
+- Architecture: docs/04-Architecture.md
+- Commands & Usage: docs/05-Commands.md
+- Data Model: docs/06-Data-Model.md
+- Security & Compliance: docs/07-Security-Compliance.md
+- Deployment: docs/08-Deployment.md
+- Operations: docs/09-Operations.md
+- FAQ: docs/10-FAQ.md
+- Privacy Policy: docs/Privacy-Policy.md
+- Terms of Use: docs/Terms-of-Use.md
 
-Chat Guard is built with Node.js and leverages the following technologies:
-
-- [discord.js](https://discord.js.org/) for Discord API integration
-- [mongoose](https://mongoosejs.com/) for MongoDB data management
-- [moment](https://momentjs.com/) and [moment-duration-format](https://github.com/jsmreese/moment-duration-format) for time formatting
-
-The codebase is modular, with core logic in the `src/` directory:
-
-- `commands.js`: Command definitions and handlers
-- `config.js`: Configuration file (edit this to set up your bot)
-- `db.js`: Database connection and models
-- `events.js`: Discord event listeners
-- `functionz.js`: Utility functions
-- `login.js`: Bot login and startup logic
-
----
-
-## Setup & Installation
-
-### Prerequisites
-
-- **Node.js** v16.9.0 or higher
-- **MongoDB** (local or cloud instance)
-- **Discord Bot Token** (from the [Discord Developer Portal](https://discord.com/developers/applications))
-
-### Steps
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/ichbinheimdall/chat-guard.git
-   cd chat-guard
-   ```
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-3. **Configure the bot:**
-   - Open `src/config.js` and fill in your credentials:
-     ```js
-     module.exports = {
-       Client_Token: "YOUR_BOT_TOKEN",
-       MongoDB_ConnectURL: "YOUR_MONGODB_CONNECTION_STRING",
-       BotOwners: ["YOUR_DISCORD_USER_ID"],
-       BotStatus: "Bot is online!",
-     };
-     ```
-4. **Start the bot:**
-   ```bash
-   npm start
-   ```
-
----
-
-## Usage & Commands
-
-Chat Guard provides a rich set of commands for server management. Some key commands:
-
-- `/commands` — List all available commands
-- `/settings` — Show current server configuration
-- `/whitelist [add/remove] [user/role/channel]` — Manage whitelist
-- `/filter [add/remove] [word]` — Edit filtered words
-- `/muteduration [time]` — Set mute duration
-- `/logchannel [channel]` — Set moderation log channel
-- `/characterlimit [enable/disable]` — Toggle character limit
-- `/inviteblock [enable/disable]` — Toggle invite blocking
-- `/linkblock [enable/disable]` — Toggle link blocking
-- `/massmentionblock [enable/disable]` — Toggle mass mention protection
-- `/badwordblock [enable/disable]` — Toggle bad word filtering
-- `/spamblock [enable/disable]` — Toggle spam protection
-- `/unmute [user]` — Unmute a user
-
-> **Note:** You must have appropriate Discord permissions (Manage Messages, Moderate Members, etc.) to use moderation commands.
-
----
-
-## Permissions
-
-To function properly, Chat Guard requires the following Discord permissions:
-
-- Manage Messages
-- Moderate Members
-- Manage Channels
-- Read Messages
-- Send Messages
-
----
-
-## Logging & Transparency
-
-Set a dedicated log channel with `/logchannel [channel]` to record moderation actions for review and transparency.
-
----
-
-## Privacy & Data
-
-Chat Guard may collect and store certain data (User IDs, Server IDs, Whitelisted IDs, Log Channel IDs) as required for operation. Direct messages to the bot are **not** stored. For data deletion requests, contact: [legal@hmddevs.org](mailto:legal@hmddevs.org).
-
----
-
-## Contributing
-
-Contributions are welcome! Please open issues or pull requests to suggest features, report bugs, or improve documentation.
-
----
+Docs website (optional): will publish to GitHub Pages via the provided workflow once Pages is enabled.
 
 ## License
 
-This project is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**. See the [LICENSE](./LICENSE) file for details and additional terms specific to Chat Guard.
-
----
+Non‑commercial use under CC BY‑NC‑SA 4.0 with additional terms. See `LICENSE`.
 
 ## Support
 
-For help or questions, open an issue or contact the developer at [info@hmddevs.org](mailto:info@hmddevs.org).
-
----
-
-## Acknowledgments
-
-- [discord.js](https://discord.js.org/)
-- [mongoose](https://mongoosejs.com/)
-- [moment](https://momentjs.com/)
-- [moment-duration-format](https://github.com/jsmreese/moment-duration-format)
-
-Special thanks to the open-source community and all contributors.
+Open an issue or contact: info@hmddevs.org
 
 This project is based on work by [Klanter](https://github.com/klanter1337/Chat-Guard).
