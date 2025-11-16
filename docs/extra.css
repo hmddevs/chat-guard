@@ -1,0 +1,8 @@
+/* Chat Guard docs branding */
+:root {
+  --cg-primary: #5865F2; /* Discord blurple */
+}
+.md-typeset a { color: var(--md-primary-fg-color, var(--cg-primary)); }
+.md-header, .md-tabs { backdrop-filter: saturate(1.1) blur(4px); }
+/* Make admonitions slightly tighter */
+.md-typeset .admonition { margin: 0.8em 0; }

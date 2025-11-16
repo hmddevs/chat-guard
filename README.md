@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img alt="Chat Guard" src="https://img.shields.io/badge/Chat%20Guard-Moderation%20Bot-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
+  <img alt="Chat Guard" src="docs/assets/logo.svg" height="72" />
   <br/>
   <a href="https://github.com/ichbinheimdall/chat-guard/actions/workflows/docs.yml">
     <img alt="Docs" src="https://github.com/ichbinheimdall/chat-guard/actions/workflows/docs.yml/badge.svg" />
@@ -11,20 +11,22 @@
   <a href="https://nodejs.org/">
     <img alt="Node" src="https://img.shields.io/badge/Node-%3E%3D16.9.0-339933" />
   </a>
-  
+  <a href="https://github.com/ichbinheimdall/chat-guard/issues">
+    <img alt="Issues" src="https://img.shields.io/github/issues/ichbinheimdall/chat-guard" />
+  </a>
 </p>
 
 # Chat Guard
 
-Configurable Discord moderation by HMD Developments, Inc. Automate message filtering, spam/invite/link blocking, mute escalation, and transparent logging — so your community stays safe and organized.
+Automated, configurable moderation for Discord — by HMD Developments, Inc. Block spam, invites, links, and bad words; rate-limit mass mentions; escalate from warnings to timed mutes; and keep everything auditable with dedicated moderation logs.
 
 ## Why Chat Guard
 
-- Business‑grade moderation: enforce clear rules consistently and reduce manual workload.
-- Proven protections: anti‑spam, mass‑mention controls, link/invite filtering, and word/term filtering.
+- Business‑grade moderation: consistent, automated enforcement reduces manual workload.
+- Proven protections: anti‑spam, mass‑mention control, link/invite filtering, bad‑word and custom filters.
 - Transparent governance: dedicated moderation logs and auditable actions.
 - Configurable by design: tune protections, mute durations, and whitelists to your community.
-- Enterprise‑friendly: clear Privacy & Terms, Security guidance, and full docs.
+- Enterprise‑ready docs: Privacy, Terms, Security & Compliance, and operational playbooks.
 
 ## Highlights
 
@@ -52,6 +54,7 @@ npm start
 
 ## Documentation
 
+- [Docs Website](https://ichbinheimdall.github.io/chat-guard/)
 - [Getting Started](docs/02-Getting-Started.md)
 - [Configuration](docs/03-Configuration.md)
 - [Architecture](docs/04-Architecture.md)
@@ -70,14 +73,19 @@ npm start
 - Join support server: https://discord.com/invite/b8e2EKJpry
 - Vote on top.gg: https://top.gg/bot/870967982522777601/vote
 
-Docs website (optional): will publish to GitHub Pages via the provided workflow once Pages is enabled.
+## Security & Privacy
+
+- Non‑commercial license under CC BY‑NC‑SA 4.0 with additional terms. See [LICENSE](./LICENSE).
+- Review our [Security & Compliance](docs/07-Security-Compliance.md), [Privacy Policy](docs/Privacy-Policy.md), and [Terms of Use](docs/Terms-of-Use.md).
+
+Docs website: https://ichbinheimdall.github.io/chat-guard/
 
 ## License
 
-Non‑commercial use under CC BY‑NC‑SA 4.0 with additional terms. See `LICENSE`.
+Non‑commercial use under CC BY‑NC‑SA 4.0 with additional terms. See [LICENSE](./LICENSE).
 
 ## Support
 
-Open an issue or contact: info@hmddevs.org
+Open an [issue](https://github.com/ichbinheimdall/chat-guard/issues) or contact: info@hmddevs.org
 
 This project is based on work by [Klanter](https://github.com/klanter1337/Chat-Guard).

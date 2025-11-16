@@ -1,8 +1,8 @@
 # Chat Guard Documentation
 
-Welcome to the official documentation for Chat Guard by HMD Developments, Inc. This documentation provides a comprehensive, technical, and operational guide for deploying, configuring, and operating Chat Guard at scale.
+> Automated, configurable moderation for Discord — by HMD Developments, Inc.
 
-If you are new to the project, start with the Overview and Getting Started. For production usage, proceed to Deployment and Operations.
+Explore Chat Guard’s capabilities and get up and running quickly. Start with the Overview, then follow Getting Started to deploy your first instance. For production adoption, see Deployment and Operations.
 
 ## Table of Contents
 
@@ -13,7 +13,7 @@ If you are new to the project, start with the Overview and Getting Started. For 
 5. [Commands & Usage](05-Commands.md) — Slash commands, permissions, examples
 6. [Data Model](06-Data-Model.md) — Schema, retention, and access patterns
 7. [Security & Compliance](07-Security-Compliance.md) — Permissions, privacy, and controls
-8. [Deployment](08-Deployment.md) — Local, cloud, and Heroku options
+8. [Deployment](08-Deployment.md) — Local, PM2, Heroku, Docker
 9. [Operations & Monitoring](09-Operations.md) — Logging, health, troubleshooting
 10. [FAQ](10-FAQ.md) — Common questions and guidance
 
@@ -24,3 +24,7 @@ Appendices:
 ---
 
 For licensing and usage terms, consult the root LICENSE. For commercial licensing inquiries or enterprise support, contact info@hmddevs.org.
+
+---
+
+[Getting Started →](02-Getting-Started.md)  |  [Security & Compliance →](07-Security-Compliance.md)

@@ -3,6 +3,7 @@ site_description: Comprehensive documentation for Chat Guard by HMD Developments
 site_url: https://ichbinheimdall.github.io/chat-guard/
 repo_url: https://github.com/ichbinheimdall/chat-guard
 repo_name: ichbinheimdall/chat-guard
+edit_uri: edit/main/docs/
 nav:
   - Home: README.md
   - Overview: 01-Overview.md
@@ -18,12 +19,51 @@ nav:
   - Privacy Policy: Privacy-Policy.md
   - Terms of Use: Terms-of-Use.md
 theme:
-  name: mkdocs
+  name: material
+  language: en
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.integrate
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
 markdown_extensions:
   - admonition
+  - footnotes
+  - def_list
+  - attr_list
   - toc:
       permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+extra_css:
+  - extra.css
+plugins:
+  - search
+  - sitemap
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ichbinheimdall/chat-guard
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/invite/b8e2EKJpry
+    - icon: fontawesome/solid/heart
+      link: https://top.gg/bot/870967982522777601/vote
