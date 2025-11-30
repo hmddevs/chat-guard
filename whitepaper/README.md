@@ -10,7 +10,7 @@ Open `index.html` in any modern web browser:
 open whitepaper/index.html
 ```
 
-Or view it live at: https://ichbinheimdall.github.io/chat-guard/whitepaper/
+Or view it live at: [https://ichbinheimdall.github.io/chat-guard/whitepaper/](https://github.com/ichbinheimdall/chat-guard/blob/main/whitepaper/chatguard.pdf)
 
 ## Save as PDF
 
