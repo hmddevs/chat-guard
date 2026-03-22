@@ -12,7 +12,7 @@ At minimum: Manage Messages, Moderate Members, Read/Send Messages. Manage Channe
 
 No. It stores only IDs and configuration necessary for operations. Some violation details may be echoed to a log channel.
 
-## Why don’t my slash commands appear?
+## Why don't my slash commands appear?
 
 Global command registration may take several minutes. Ensure the bot is online and no REST errors are printed at startup.
 
@@ -30,6 +30,6 @@ Use `/whitelist add id:<id>` with a user, role, or channel ID. See [Commands](05
 
 ## Where can I get help?
 
-Open an [issue on GitHub](https://github.com/ichbinheimdall/chat-guard/issues) or contact info@hmddevs.org for enterprise support.
+Open an [issue on GitHub](https://github.com/umutguden/chat-guard/issues) or contact info@hmddevs.org for enterprise support.
 
 [Back to Docs Index](README.md)
