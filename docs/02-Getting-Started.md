@@ -12,7 +12,7 @@ This guide brings you from zero to a running Chat Guard instance.
 ## 1) Clone and Install
 
 ```bash
-git clone https://github.com/ichbinheimdall/chat-guard.git
+git clone https://github.com/umutguden/chat-guard.git
 cd chat-guard
 npm install
 ```
@@ -45,7 +45,7 @@ You should see a successful connection log in the console.
 
 ## 4) Invite the Bot
 
-Use the slash command `/invite` in any server where the bot is present. You can also construct an OAuth2 URL manually with the bot’s client ID and the `applications.commands` scope plus minimal permissions required for moderation features.
+Use the slash command `/invite` in any server where the bot is present. You can also construct an OAuth2 URL manually with the bot's client ID and the `applications.commands` scope plus minimal permissions required for moderation features.
 
 ## 5) Minimal Setup
 
