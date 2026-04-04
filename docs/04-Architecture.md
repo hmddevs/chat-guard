@@ -8,7 +8,7 @@ This document explains Chat Guard’s design and request flow.
 - `src/login.js`: Connects to MongoDB, logs into Discord, and registers slash commands via REST on `ready`.
 - `src/events.js`: Applies runtime policy on `messageCreate` and `messageUpdate` events.
 - `src/commands.js`: Implements slash commands for policy management and information queries.
-- `src/functionz.js`: Utility layer — spam detection, punishment workflow, whitelist checks, and helpers.
+- `src/functionz.js`: Utility layer for spam detection, punishment workflow, whitelist checks, and helpers.
 - `src/db.js`: Mongoose schema and model for per‑server configuration and state.
 
 ## Data Flow

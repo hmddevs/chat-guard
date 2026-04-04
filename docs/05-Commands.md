@@ -4,25 +4,25 @@ This reference lists all slash commands, parameters, required permissions, and e
 
 ## General
 
-- `/commands` — Shows the bot's command list.
-- `/privacy` — Links to Privacy Policy and Terms of Use.
-- `/invite` — Bot invite, support server, and voting links.
-- `/info` — Bot telemetry (owners only).
+- `/commands` : shows the bot's command list.
+- `/privacy` : links to Privacy Policy and Terms of Use.
+- `/invite` : bot invite, support server, and voting links.
+- `/info` : bot telemetry (owners only).
 
 ## Settings & Policy
 
-- `/settings` — Displays current server configuration.
-- `/logchannel channel:<#text-channel>` — Sets the moderation log channel.
-- `/muteduration time:<minutes>` — Sets mute duration in minutes.
-- `/filter options:<add|remove> word:<string>` — Adds/removes filtered terms.
-- `/whitelist options:<add|remove> id:<user|role|channel id>` — Manages whitelist.
-- `/characterlimit options:<enable|disable>` — Toggles 500‑char limit.
-- `/inviteblock options:<enable|disable>` — Toggles invite blocking.
-- `/linkblock options:<enable|disable>` — Toggles link blocking.
-- `/massmentionblock options:<enable|disable>` — Toggles mass‑mention protection.
-- `/badwordblock options:<enable|disable>` — Toggles bad‑word filter.
-- `/spamblock options:<enable|disable>` — Toggles spam protection.
-- `/unmute member:<@user>` — Removes active timeout.
+- `/settings` : displays current server configuration.
+- `/logchannel channel:<#text-channel>` : sets the moderation log channel.
+- `/muteduration time:<minutes>` : sets mute duration in minutes.
+- `/filter options:<add|remove> word:<string>` : adds or removes filtered terms.
+- `/whitelist options:<add|remove> id:<user|role|channel id>` : manages whitelist.
+- `/characterlimit options:<enable|disable>` : toggles 500‑char limit.
+- `/inviteblock options:<enable|disable>` : toggles invite blocking.
+- `/linkblock options:<enable|disable>` : toggles link blocking.
+- `/massmentionblock options:<enable|disable>` : toggles mass‑mention protection.
+- `/badwordblock options:<enable|disable>` : toggles bad‑word filter.
+- `/spamblock options:<enable|disable>` : toggles spam protection.
+- `/unmute member:<@user>` : removes active timeout.
 
 ## Permissions
 

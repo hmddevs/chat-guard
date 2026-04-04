@@ -5,10 +5,10 @@ This document outlines Chat Guard’s security posture, permission model, and pr
 ## Discord Permissions
 
 Minimum permissions required for full functionality:
-- Manage Messages — Delete violating messages
-- Moderate Members — Apply timeout (mute)
-- Read/Send Messages — Respond and log
-- Manage Channels — Recommended for robust operations
+- Manage Messages: delete violating messages
+- Moderate Members: apply timeout (mute)
+- Read/Send Messages: respond and log
+- Manage Channels: recommended for robust operations
 
 Grant the smallest practical set of permissions for your policy.
 

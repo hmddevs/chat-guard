@@ -22,16 +22,16 @@ module.exports = {
 
 Chat Guard persists per‑server configuration and state in the `ChatGuard` collection. See [Data Model](06-Data-Model.md) for full schema. Key toggles:
 
-- `CharacterLimit` (boolean) — Enforces 500‑character limit
-- `InviteGuard` (boolean) — Blocks Discord invites from non‑whitelisted sources
-- `LinkGuard` (boolean) — Blocks generic external links
-- `MassPingGuard` (boolean) — Mitigates mass mentions
-- `BadWordGuard` (boolean) — Filters profanity list
-- `SpamGuard` (boolean) — Blocks burst spam (≥7 messages in 5s)
-- `MuteDurationMinute` (number) — Mute duration in minutes (default 60)
-- `FiltredWords` (array) — Server‑specific filtered keywords
-- `WhiteListMembers|Roles|Channels` (arrays) — Bypass enforcement
-- `PunishLogChannelID` (string) — Channel ID for moderation logs
+- `CharacterLimit` (boolean): enforces 500‑character limit
+- `InviteGuard` (boolean): blocks Discord invites from non‑whitelisted sources
+- `LinkGuard` (boolean): blocks generic external links
+- `MassPingGuard` (boolean): mitigates mass mentions
+- `BadWordGuard` (boolean): filters profanity list
+- `SpamGuard` (boolean): blocks burst spam (≥7 messages in 5s)
+- `MuteDurationMinute` (number): mute duration in minutes (default 60)
+- `FiltredWords` (array): server‑specific filtered keywords
+- `WhiteListMembers|Roles|Channels` (arrays): bypass enforcement
+- `PunishLogChannelID` (string): channel ID for moderation logs
 
 ## Recommended Defaults
 
