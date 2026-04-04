@@ -8,12 +8,12 @@
 *Enterprise-grade content filtering and community protection for Discord servers*
 
 [![Documentation](https://img.shields.io/badge/Read%20the%20Docs-0b5fff?style=for-the-badge)](https://umutguden.github.io/chat-guard/)
-[![GitHub](https://img.shields.io/badge/View%20on%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/umutguden/chat-guard)
+[![GitHub](https://img.shields.io/badge/View%20on%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hmddevs/chat-guard)
 
-[![Build Status](https://github.com/umutguden/chat-guard/actions/workflows/docs.yml/badge.svg)](https://github.com/umutguden/chat-guard/actions/workflows/docs.yml)
+[![Build Status](https://github.com/hmddevs/chat-guard/actions/workflows/docs.yml/badge.svg)](https://github.com/hmddevs/chat-guard/actions/workflows/docs.yml)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey)](./LICENSE)
 [![Node](https://img.shields.io/badge/Node-%3E%3D16.9.0-339933)](https://nodejs.org/)
-[![Issues](https://img.shields.io/github/issues/umutguden/chat-guard)](https://github.com/umutguden/chat-guard/issues)
+[![Issues](https://img.shields.io/github/issues/hmddevs/chat-guard)](https://github.com/hmddevs/chat-guard/issues)
 
 </div>
 
@@ -73,7 +73,7 @@ Whether you're managing a small community or a large-scale server, Chat Guard sc
 
 ```bash
 # Clone the repository
-git clone https://github.com/umutguden/chat-guard.git
+git clone https://github.com/hmddevs/chat-guard.git
 cd chat-guard
 
 # Install dependencies
@@ -146,7 +146,7 @@ We welcome contributions! Please review our:
 - [Code of Conduct](CODE_OF_CONDUCT.md)
 - [Security Policy](SECURITY.md)
 
-Open an [issue](https://github.com/umutguden/chat-guard/issues) to report bugs or request features.
+Open an [issue](https://github.com/hmddevs/chat-guard/issues) to report bugs or request features.
 
 ## License
 
@@ -162,8 +162,8 @@ See [LICENSE](./LICENSE) for full terms. For commercial licensing inquiries, con
 ## Support
 
 - 📖 **Documentation**: [umutguden.github.io/chat-guard](https://umutguden.github.io/chat-guard/)
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/umutguden/chat-guard/issues)
-- 💬 **Questions**: [GitHub Discussions](https://github.com/umutguden/chat-guard/discussions)
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/hmddevs/chat-guard/issues)
+- 💬 **Questions**: [GitHub Discussions](https://github.com/hmddevs/chat-guard/discussions)
 - 📧 **Email**: info@hmddevs.org
 
 ---
@@ -208,7 +208,7 @@ Keep your community safe and orderly with policy‑driven controls, transparent 
 ## Quick Start
 
 ```bash
-git clone https://github.com/umutguden/chat-guard.git
+git clone https://github.com/hmddevs/chat-guard.git
 cd chat-guard
 npm install
 # edit src/config.js with your token & MongoDB URL
@@ -225,7 +225,7 @@ npm start
 Chat Guard is open-source and designed for self-hosting. Clone the repository, configure your environment, and deploy your own instance:
 
 ```bash
-git clone https://github.com/umutguden/chat-guard.git
+git clone https://github.com/hmddevs/chat-guard.git
 cd chat-guard
 npm install
 # Configure src/config.js with your bot token and MongoDB URL
@@ -247,7 +247,7 @@ Non‑commercial use under CC BY‑NC‑SA 4.0 with additional terms. See [LICEN
 
 ## Support
 
-Open an [issue](https://github.com/umutguden/chat-guard/issues) or contact: info@hmddevs.org
+Open an [issue](https://github.com/hmddevs/chat-guard/issues) or contact: info@hmddevs.org
 
 ## Acknowledgments
 

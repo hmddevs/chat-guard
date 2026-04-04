@@ -1,8 +1,8 @@
 site_name: Chat Guard Documentation
 site_description: Comprehensive documentation for Chat Guard by HMD Developments, Inc.
 site_url: https://umutguden.github.io/chat-guard/
-repo_url: https://github.com/umutguden/chat-guard
-repo_name: umutguden/chat-guard
+repo_url: https://github.com/hmddevs/chat-guard
+repo_name: hmddevs/chat-guard
 edit_uri: edit/main/docs/
 nav:
   - Home: README.md
@@ -61,6 +61,6 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/umutguden/chat-guard
+      link: https://github.com/hmddevs/chat-guard
   generator: false
 copyright: Copyright &copy; 2024-2025 HMD Developments, Inc. All rights reserved.
