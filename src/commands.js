@@ -37,8 +37,8 @@ if (interaction.commandName === 'commands') {
 
 🕸️ ⚙️ **About the Bot:**
 🌹 Open-source moderation bot by HMD Developments, Inc.
-🌹 Documentation: https://hmddevs.github.io/chat-guard/
-🌹 Repository: https://github.com/hmddevs/chat-guard
+🌹 Documentation: https://umutguden.github.io/chat-guard/
+🌹 Repository: https://github.com/umutguden/chat-guard
 `)],
         ephemeral: true
     }).catch(() => {});
@@ -50,8 +50,8 @@ if(interaction.commandName === 'privacy') {
     .setThumbnail(client.user.avatarURL())
     .setTimestamp()
     .setDescription(`
-🌹 [Click for Privacy Policy!](https://github.com/hmddevs/chat-guard/blob/main/docs/Privacy-Policy.md)  
-🌹 [Click for Terms of Use!](https://github.com/hmddevs/chat-guard/blob/main/docs/Terms-of-Use.md)
+🌹 [Click for Privacy Policy!](https://github.com/umutguden/chat-guard/blob/main/docs/Privacy-Policy.md)  
+🌹 [Click for Terms of Use!](https://github.com/umutguden/chat-guard/blob/main/docs/Terms-of-Use.md)
 `)]});
 }; 
 if (interaction.commandName === 'invite') {
@@ -63,9 +63,9 @@ if (interaction.commandName === 'invite') {
             .setTimestamp()
             .setDescription(`
 🌹 **Chat Guard** is open-source moderation software for Discord.
-🌹 [View Documentation](https://hmddevs.github.io/chat-guard/)
-🌹 [GitHub Repository](https://github.com/hmddevs/chat-guard)
-🌹 [Report Issues](https://github.com/hmddevs/chat-guard/issues)
+🌹 [View Documentation](https://umutguden.github.io/chat-guard/)
+🌹 [GitHub Repository](https://github.com/umutguden/chat-guard)
+🌹 [Report Issues](https://github.com/umutguden/chat-guard/issues)
 `)]
     });
 };
@@ -119,7 +119,7 @@ if (interaction.commandName === 'settings') {
 → **Log Channel**: ${Database.PunishLogChannelID ? `<#${Database.PunishLogChannelID}>` : 'Log channel not set.'}
 
 🌹 To see commands and their usage, type \`/commands\`.
-🌹 Documentation: https://hmddevs.github.io/chat-guard/
+🌹 Documentation: https://umutguden.github.io/chat-guard/
 `)]
         }).catch(() => {});
     }
@@ -146,7 +146,7 @@ if (interaction.commandName === 'settings') {
 → Whitelisted channels: **No channels in the whitelist.**
 
 🌹 To see commands and their usage, type \`/commands\`.
-🌹 Documentation: https://hmddevs.github.io/chat-guard/
+🌹 Documentation: https://umutguden.github.io/chat-guard/
 `)]
         });
     }

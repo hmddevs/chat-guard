@@ -12,7 +12,7 @@ This guide brings you from zero to a running Chat Guard instance.
 ## 1) Clone and Install
 
 ```bash
-git clone https://github.com/hmddevs/chat-guard.git
+git clone https://github.com/umutguden/chat-guard.git
 cd chat-guard
 npm install
 ```

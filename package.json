@@ -17,12 +17,12 @@
   "license": "CC-BY-NC-SA-4.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hmddevs/chat-guard.git"
+    "url": "https://github.com/umutguden/chat-guard.git"
   },
   "bugs": {
-    "url": "https://github.com/hmddevs/chat-guard/issues"
+    "url": "https://github.com/umutguden/chat-guard/issues"
   },
-  "homepage": "https://github.com/hmddevs/chat-guard#readme",
+  "homepage": "https://github.com/umutguden/chat-guard#readme",
   "dependencies": {
     "@discordjs/rest": "^2.0.0",
     "discord.js": "^14.19.3",

@@ -7,12 +7,12 @@
 Configurable content filtering and community protection for Discord servers.
 
 [![Documentation](https://img.shields.io/badge/Read%20the%20Docs-0b5fff?style=for-the-badge)](https://umutguden.github.io/chat-guard/)
-[![GitHub](https://img.shields.io/badge/View%20on%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hmddevs/chat-guard)
+[![GitHub](https://img.shields.io/badge/View%20on%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/umutguden/chat-guard)
 
-[![Build Status](https://github.com/hmddevs/chat-guard/actions/workflows/docs.yml/badge.svg)](https://github.com/hmddevs/chat-guard/actions/workflows/docs.yml)
+[![Build Status](https://github.com/umutguden/chat-guard/actions/workflows/docs.yml/badge.svg)](https://github.com/umutguden/chat-guard/actions/workflows/docs.yml)
 [![Licence](https://img.shields.io/badge/Licence-CC%20BY--NC--SA%204.0-lightgrey)](./LICENSE)
 [![Node](https://img.shields.io/badge/Node-%3E%3D16.9.0-339933)](https://nodejs.org/)
-[![Issues](https://img.shields.io/github/issues/hmddevs/chat-guard)](https://github.com/hmddevs/chat-guard/issues)
+[![Issues](https://img.shields.io/github/issues/umutguden/chat-guard)](https://github.com/umutguden/chat-guard/issues)
 
 </div>
 
@@ -44,7 +44,7 @@ Chat Guard is an open-source Discord moderation bot built for communities that n
 ### Installation
 
 ```bash
-git clone https://github.com/hmddevs/chat-guard.git
+git clone https://github.com/umutguden/chat-guard.git
 cd chat-guard
 npm install
 ```
@@ -87,7 +87,7 @@ Full documentation is available at [umutguden.github.io/chat-guard](https://umut
 
 Contributions are welcome. Please review the [Contributing Guidelines](CONTRIBUTING.md), [Code of Conduct](CODE_OF_CONDUCT.md), and [Security Policy](SECURITY.md) before opening a pull request.
 
-File bugs or feature requests via [GitHub Issues](https://github.com/hmddevs/chat-guard/issues).
+File bugs or feature requests via [GitHub Issues](https://github.com/umutguden/chat-guard/issues).
 
 ## Licence
 
@@ -103,8 +103,8 @@ For commercial licensing enquiries, contact info@hmddevs.org.
 ## Support
 
 - **Documentation**: [umutguden.github.io/chat-guard](https://umutguden.github.io/chat-guard/)
-- **Bug reports**: [GitHub Issues](https://github.com/hmddevs/chat-guard/issues)
-- **Questions**: [GitHub Discussions](https://github.com/hmddevs/chat-guard/discussions)
+- **Bug reports**: [GitHub Issues](https://github.com/umutguden/chat-guard/issues)
+- **Questions**: [GitHub Discussions](https://github.com/umutguden/chat-guard/discussions)
 - **Email**: info@hmddevs.org
 
 ---
