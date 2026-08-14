@@ -10,7 +10,11 @@ Open `index.html` in any modern web browser:
 open whitepaper/index.html
 ```
 
-Or view it live at: [https://hmddevs.github.io/chat-guard/whitepaper/](https://github.com/hmddevs/chat-guard/blob/main/whitepaper/chatguard.pdf)
+A PDF export is included as [`chatguard.pdf`](chatguard.pdf).
+
+> **Note:** `index.html` is the current version. The PDF was exported earlier and
+> still carries the old repository URLs and an outdated description of the
+> configuration mechanism, so treat the web page as authoritative.
 
 ## Save as PDF
 
