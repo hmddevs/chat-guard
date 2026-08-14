@@ -12,7 +12,7 @@ By installing, accessing, or using Chat Guard ("the Bot"), you agree to these Te
 
 ## License
 
-The Bot is provided under Creative Commons Attribution‑NonCommercial‑ShareAlike 4.0 International with additional terms as set out in LICENSE. Commercial use requires a separate written agreement with HMD Developments, Inc.
+The Bot is provided under Creative Commons Attribution‑NonCommercial‑ShareAlike 4.0 International with additional terms as set out in LICENSE. Commercial use requires a separate written agreement with HMD Developments.
 
 ## Administrator Responsibilities
 
@@ -34,6 +34,6 @@ We may update these Terms to reflect operational, legal, or regulatory changes. 
 
 ## Contact
 
-HMD Developments, Inc.  
+HMD Developments  
 2 Emerald Street, London WC1N 3QA, United Kingdom  
 Email: info@hmddevs.org

@@ -2,7 +2,7 @@
 
 ## Is Chat Guard free to use?
 
-Yes, under the Creative Commons Attribution‑NonCommercial‑ShareAlike 4.0 license with additional terms (see repository LICENSE). Commercial use requires separate arrangements with HMD Developments, Inc.
+Yes, under the Creative Commons Attribution‑NonCommercial‑ShareAlike 4.0 license with additional terms (see repository LICENSE). Commercial use requires separate arrangements with HMD Developments.
 
 ## What permissions does the bot need?
 
@@ -30,6 +30,6 @@ Use `/whitelist add id:<id>` with a user, role, or channel ID. See [Commands](05
 
 ## Where can I get help?
 
-Open an [issue on GitHub](https://github.com/umutguden/chat-guard/issues) or contact info@hmddevs.org for enterprise support.
+Open an [issue on GitHub](https://github.com/hmddevs/chat-guard/issues) or contact info@hmddevs.org for enterprise support.
 
 [Back to Docs Index](README.md)

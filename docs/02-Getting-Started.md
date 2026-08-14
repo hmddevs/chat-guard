@@ -12,28 +12,34 @@ This guide brings you from zero to a running Chat Guard instance.
 ## 1) Clone and Install
 
 ```bash
-git clone https://github.com/umutguden/chat-guard.git
+git clone https://github.com/hmddevs/chat-guard.git
 cd chat-guard
 npm install
 ```
 
 ## 2) Configure
 
-Edit `src/config.js` and set the following fields:
+Configuration is read from environment variables. Copy the example file and fill it in:
 
-```js
-module.exports = {
-  Client_Token: "YOUR_DISCORD_BOT_TOKEN",
-  MongoDB_ConnectURL: "YOUR_MONGODB_CONNECTION_STRING",
-  BotOwners: ["YOUR_DISCORD_USER_ID"],
-  BotStatus: "Bot is online!",
-};
+```bash
+cp .env.example .env
 ```
 
-- `Client_Token`: Your bot token from the Discord Developer Portal
-- `MongoDB_ConnectURL`: Standard MongoDB connection string
-- `BotOwners`: User IDs with elevated access (e.g., `/info`)
-- `BotStatus`: Presence text displayed by the bot
+```bash
+DISCORD_BOT_TOKEN=your-bot-token
+MONGODB_URI=your-mongodb-connection-string
+BOT_OWNERS=your-discord-user-id
+BOT_STATUS=Bot is online!
+```
+
+- `DISCORD_BOT_TOKEN` (required): Your bot token from the Discord Developer Portal
+- `MONGODB_URI` (required): Standard MongoDB connection string
+- `BOT_OWNERS`: User IDs with elevated access (e.g., `/info`), comma-separated
+- `BOT_STATUS`: Presence text displayed by the bot
+
+`.env` is ignored by git. Load it however suits your setup: export the variables in
+your shell, use your process manager or host's environment settings, or on Node 20.6
+and later run `node --env-file=.env app.js`.
 
 ## 3) Start
 

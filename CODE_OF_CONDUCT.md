@@ -34,4 +34,4 @@ Report incidents to conduct@hmddevs.org. All complaints will be reviewed and inv
 
 ## Attribution
 
-This Code of Conduct is adapted from common open‑source standards (e.g., Contributor Covenant) and tailored for HMD Developments, Inc.
+This Code of Conduct is adapted from common open‑source standards (e.g., Contributor Covenant) and tailored for HMD Developments.

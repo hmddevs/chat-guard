@@ -1,6 +1,6 @@
 # Overview
 
-Chat Guard is a configurable Discord moderation bot engineered by HMD Developments, Inc. to help communities remain safe, compliant, and resilient at any scale. It unifies best‑practice moderation controls into a single, operable service: automated message filtering, link/invite protection, spam mitigation, mass‑mention rate‑limiting, configurable mutes, and comprehensive logging.
+Chat Guard is a configurable Discord moderation bot engineered by HMD Developments to help communities remain safe, compliant, and resilient at any scale. It unifies best‑practice moderation controls into a single, operable service: automated message filtering, link/invite protection, spam mitigation, mass‑mention rate‑limiting, configurable mutes, and comprehensive logging.
 
 ## Business Value
 

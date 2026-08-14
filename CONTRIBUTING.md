@@ -10,7 +10,7 @@ We welcome contributions from the community. By contributing, you agree to abide
   ```bash
   npm install
   ```
-- Configure local settings in `src/config.js` (do not commit secrets).
+- Configure local settings in `.env` (copy `.env.example`); never commit secrets.
 - Start the bot:
   ```bash
   npm start

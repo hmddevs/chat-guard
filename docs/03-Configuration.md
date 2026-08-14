@@ -2,21 +2,24 @@
 
 This document describes all configurable aspects of Chat Guard and recommended practices for secure and reliable operation.
 
-## File: `src/config.js`
+## Environment variables
 
-```js
-module.exports = {
-  Client_Token: "<discord-bot-token>",
-  MongoDB_ConnectURL: "<mongodb-connection-string>",
-  BotOwners: ["<discord-user-id>", "<optional-second-owner-id>"],
-  BotStatus: "Bot is online!",
-};
+Configuration is read from the environment by `src/config.js`. See `.env.example` for a
+template.
+
+```bash
+DISCORD_BOT_TOKEN=<discord-bot-token>
+MONGODB_URI=<mongodb-connection-string>
+BOT_OWNERS=<discord-user-id>,<optional-second-owner-id>
+BOT_STATUS=Bot is online!
 ```
 
-- `Client_Token` (required): Discord bot token. Treat as secret.
-- `MongoDB_ConnectURL` (required): MongoDB connection string. TLS recommended.
-- `BotOwners` (required): Array of user IDs with developer‑level access.
-- `BotStatus` (optional): Presence text (e.g., Watching, default configured in code).
+- `DISCORD_BOT_TOKEN` (required): Discord bot token. Treat as secret.
+- `MONGODB_URI` (required): MongoDB connection string. TLS recommended.
+- `BOT_OWNERS`: Comma-separated user IDs with developer‑level access.
+- `BOT_STATUS` (optional): Presence text (e.g., Watching, default configured in code).
+
+The bot fails fast at startup if either required variable is missing.
 
 ## Server Policy (stored in MongoDB)
 
@@ -56,6 +59,9 @@ The bot currently sets `moment` locale to `tr` for time formatting. If you need 
 
 ## Secrets Management
 
-Do not commit tokens or connection strings. Use environment managers (e.g., Heroku config vars, GitHub Actions secrets) and inject into `src/config.js` during deployment, or refactor to load from environment variables.
+Do not commit tokens or connection strings. `src/config.js` reads them from the
+environment, and `.env` is git-ignored, so nothing secret needs to live in a tracked
+file. In deployment, supply the variables through your platform's own secret store
+(e.g. Heroku config vars, GitHub Actions secrets) rather than shipping a `.env`.
 
 [Back to Docs Index](README.md) · [Next: Architecture →](04-Architecture.md) · [See also: Commands](05-Commands.md)

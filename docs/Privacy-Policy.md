@@ -2,7 +2,7 @@
 
 Effective date: 6 May 2025
 
-This Privacy Policy describes how Chat Guard ("the Bot"), operated by HMD Developments, Inc. ("HMD", "we", "us"), collects and processes data in the course of providing automated moderation services on Discord.
+This Privacy Policy describes how Chat Guard ("the Bot"), operated by HMD Developments ("HMD", "we", "us"), collects and processes data in the course of providing automated moderation services on Discord.
 
 ## Data We Process
 
@@ -39,6 +39,6 @@ Server administrators control the Bot’s configuration and can remove it at any
 
 ## Contact
 
-HMD Developments, Inc.  
+HMD Developments  
 2 Emerald Street, London WC1N 3QA, United Kingdom  
 Email: legal@hmddevs.org

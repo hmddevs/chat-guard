@@ -22,7 +22,8 @@ pm2 save
 pm2 startup
 ```
 
-Ensure environment variables or `src/config.js` are correctly set on the host.
+Ensure the required environment variables are set on the host. See
+[Configuration](03-Configuration.md).
 
 ## Heroku
 
@@ -34,7 +35,7 @@ worker: node app.js
 
 Steps:
 1. Create a Heroku app.
-2. Set Config Vars: `CLIENT_TOKEN`, `MONGODB_CONNECTURL`, etc., and inject into `src/config.js` via build or use an env‑based config variant.
+2. Set Config Vars: `DISCORD_BOT_TOKEN`, `MONGODB_URI`, `BOT_OWNERS`.
 3. Deploy the repo.
 4. Scale worker: `heroku ps:scale worker=1`.
 
